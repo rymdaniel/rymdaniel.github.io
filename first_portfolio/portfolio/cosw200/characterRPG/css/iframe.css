@@ -1,0 +1,39 @@
+ body {
+     padding: 20px;
+ }
+
+ p {
+     font-family: "Coder's Crux";
+     font-size: 1.5em;
+     line-height: 1em;
+     text-indent: 20px;
+ }
+
+
+ .title {
+     color: #61b0a4;
+     text-align: center;
+ }
+
+ #subText {
+     color: white;
+     margin: 5px 0 25px 0;
+     padding-bottom: 25px;
+     border-bottom: 1px solid #61b0a4;
+     text-align: justify;
+ }
+
+
+ img {
+     width: 30%;
+     position: relative;
+     margin: 0 0 25px;
+     left: 50%;
+     transform: translate(-50%, 0%);
+     image-rendering: pixelated;
+ }
+
+.ability {
+    width: 10%;
+    left: 20px;
+}

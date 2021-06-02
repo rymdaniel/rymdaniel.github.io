@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Daniel Palacios: Work</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/workGalleries.css">
+    <meta name="description" content="Web Development Portfolio">
+    <meta name="keywords" content="HTML, CSS, web, development, portfolio, design, website, site, creation">
+    <meta name="author" content="Daniel Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|IBM+Plex+Mono|Amiko" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="home.html"><img id="logo" src="media/logo.png"></a>
+        <div id="navlinks">
+            <a href="about.html">About</a>
+            <a href="work.html" class="current">Work</a>
+            <a href="personal.html">Personal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="mobilelinks">
+            <a href="about.html">About</a>
+            <a href="work.html" class="current">Work</a>
+            <a href="personal.html">Personal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="menuIcon">
+            <div id="bars">
+                <div class="bar" id="barOne"></div>    
+                <div class="bar" id="barTwo"></div>    
+                <div class="bar" id="barThree"></div>
+            </div>
+            <div id="close">&times;</div>
+        </div>
+    </nav>
+    <div id="whiteBar"></div>
+    <main>
+        <div id="previewContainer">
+            <div class="preview">
+                <h1>Portfolio</h1>
+                <img src="media/portfoliosite.png" onclick="loadModal(storedLinks[0], storedPreviews[0], storedHeaders[0], storedDescriptions[0])">
+            </div>
+            <div class="preview">
+                <h1>Character Generator / Game Concept</h1>
+                <img src="media/neighborhood.png" onclick="loadModal(storedLinks[1], storedPreviews[1], storedHeaders[1], storedDescriptions[1])">
+            </div>
+            <div class="preview">
+                <h1>Alice In Wonderland: E-Book</h1>
+                <img src="media/ebook.png" onclick="loadModal(storedLinks[2], storedPreviews[2], storedHeaders[2], storedDescriptions[2])">
+            </div>
+            <div class="preview">
+                <h1>Responsive Design</h1>
+                <img src="media/responsive_web_design_lab.png" onclick="loadModal(storedLinks[3], storedPreviews[3], storedHeaders[3], storedDescriptions[3])">
+            </div>
+            <div class="preview">
+                <h1>Functions, If Statements, and Math</h1>
+                <img src="media/calculators.png" onclick="loadModal(storedLinks[4], storedPreviews[4], storedHeaders[4], storedDescriptions[4])">
+            </div>
+            <div class="preview">
+                <h1>Javascript: Strings &amp; Arrays</h1>
+                <img src="media/stringsAndArrays.png" onclick="loadModal(storedLinks[5], storedPreviews[5], storedHeaders[5], storedDescriptions[5])">
+            </div>
+            <div class="preview">
+                <h1>Qualities of a Javascript Programmer</h1>
+                <img src="media/javascriptQualties.png" onclick="loadModal(storedLinks[6], storedPreviews[6], storedHeaders[6], storedDescriptions[6])">
+            </div>
+        </div>
+        <div id="modal">
+            <div id="modalLeft">
+                <div id="thumbnailContainer">
+                    <img src="" id="image">
+                    <a href="" target="_blank" id="link">LINK TO PROJECT</a>
+                </div>
+            </div>
+            <div id="modalRight">
+                <button type="button" name="close" onclick="closeModal()"><p>X</p></button>
+                <div id="modalContent">
+                    <h1 id="header"></h1>
+                    <div id="description">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hiddenModalContent">
+            <div id="projectOne">
+                <h1 id="headerOne" class="header">Portfolio Site</h1>
+                <a id="linkOne" class="link" href="http://dpalacios.collegewebserver.com/" target="_blank">
+                    <img id="imageOne" class="image" src="media/portfoliosite.png">
+                </a>
+                <div id="descriptionOne" class="description">
+                    <p>&emsp;Our final assignment in my Intro to Web Development Course was using all the things we had learned to create an online portfolio. This site contained all the lab assignments and projects we did throughout the semester. If you wish to see a more in depth look at all I do, including things besides web development, then by all means visit this site!
+                    </p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>@font-face</td>
+                            <td>animation</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>z-index</td>
+                        </tr>
+                        <tr>
+                            <td>Folder Structure</td>
+                            <td>Design Continuity</td>
+                        </tr>
+                        <tr>
+                            <td>viewport</td>
+                            <td>iframe</td>
+                        </tr>
+                        <tr>
+                            <td>Google Fonts</td>
+                            <td>Lightbox Gallery</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectTwo">
+                <h1 id="headerTwo" class="header">Character Generator / Game Concept</h1>
+                <a id="linkTwo" class="link" href="http://dpalacios.collegewebserver.com/portfolio/cosw200/characterRPG/startMenu.html">
+                    <img id="imageTwo" class="image" src="media/neighborhood.png">
+                </a>
+                <div id="descriptionTwo" class="description">
+                    <p>&emsp;Our class was assigned with creating a simple character generator that randomized basic characteristics such as a name, class, and age. Given this was our first official Javascript project I was eager to go beyond all my previous work as usual. I began the day it was assigned and learned so much from just the first assignment. I included sample art and story to add to the aesthetic of it all.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>@font-face</td>
+                            <td>animation</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>z-index</td>
+                        </tr>
+                        <tr>
+                            <td>Folder Structure</td>
+                            <td>Design Continuity</td>
+                        </tr>
+                        <tr>
+                            <td>viewport</td>
+                            <td>iframe</td>
+                        </tr>
+                        <tr>
+                            <td>Google Fonts</td>
+                            <td>JS Functions</td>
+                        </tr>
+                        <tr>
+                            <td>tables</td>
+                            <td>JS Random Numbers</td>
+                        </tr>
+                        <tr>
+                            <td>JS Objects</td>
+                            <td>DOM Manipulation</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectThree">
+                <h1 id="headerThree" class="header">Alice In Wonderland: E-Book</h1>
+                <a id="linkThree" class="link" href="http://dpalacios.collegewebserver.com/portfolio/cosw10/projects/project1/index.html">
+                    <img id="imageThree" class="image" src="media/ebook.png">
+                </a>
+                <div id="descriptionThree" class="description">
+                    <p>&emsp;Our first project in Intro to Web Development was to create an Alice in Wonder E-book. We were assigned three chapters and had total liberty every step of the way.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>meta keywords</td>
+                            <td>custom divs</td>
+                        </tr>
+                        <tr>
+                            <td>Google Fonts</td>
+                            <td>Fixed Nav Bar</td>
+                        </tr>
+                        <tr>
+                            <td>Print Queries</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectFour">
+                <h1 id="headerFour" class="header">Responsive Web Design</h1>
+                <a id="linkFour" class="link" href="http://dpalacios.collegewebserver.com/portfolio/cosw10/labwork/lab18/">
+                    <img id="imageFour" class="image" src="media/responsive_web_design_lab.png">
+                </a>
+                <div id="descriptionFour" class="description">
+                    <p>&emsp;This lab assignment tasked us with understanding the fundamentals of responsives design and making things functional for mobile.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>viewport</td>
+                            <td>iframe</td>
+                        </tr>
+                        <tr>
+                            <td>float property</td>
+                            <td>@media queries</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectFive">
+                <h1 id="headerFive" class="header">Functions, If Statements, and Math</h1>
+                <a id="linkFive" class="link" href="https://codepen.io/rymdaniel/full/qxKZNM/">
+                    <img id="imageFive" class="image" src="media/calculators.png">
+                </a>
+                <div id="descriptionFive" class="description">
+                    <p>&emsp;This lab assignment required us to retrieve and manipulate user input with Javascript.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>functions</td>
+                            <td>If Else Statements</td>
+                        </tr>
+                        <tr>
+                            <td>parameters</td>
+                            <td>DOM Manipulation</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectSix">
+                <h1 id="headerSix" class="header">Javascript: Strings &amp; Arrays</h1>
+                <a id="linkSix" class="link" href="https://codepen.io/rymdaniel/full/eVxEpR/">
+                    <img id="imageSix" class="image" src="media/stringsAndArrays.png">
+                </a>
+                <div id="descriptionSix" class="description">
+                    <p>&emsp;For this assignment we were asked to manipulate user input in a variety of ways to learn about string methods and arrays.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>functions</td>
+                            <td>If Else Statements</td>
+                        </tr>
+                        <tr>
+                            <td>Arrays</td>
+                            <td>For Loops</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="projectSeven">
+                <h1 id="headerSeven" class="header">Qualities of a Javascript Programmer</h1>
+                <a id="linkSeven" class="link" href="https://codepen.io/rymdaniel/full/WzjwXK/">
+                    <img id="imageSeven" class="image" src="media/javascriptQualties.png">
+                </a>
+                <div id="descriptionSeven" class="description">
+                    <p>&emsp;This assignment required we create a list of qualities we think a Javascript programmer should have. It required three buttons: one to add two qualities, one to highlight three randomly, and a button to delete one list item. A final requirement was to have output somewhere on the page declaring the changes that had been made to the list.</p>
+                    <h1><br>Skills Used:<br></h1>
+                    <table>
+                        <tr>
+                            <td>functions</td>
+                            <td>For Loops</td>
+                        </tr>
+                        <tr>
+                            <td>Arrays</td>
+                            <td>While Loops</td>
+                        </tr>
+                        <tr>
+                            <td>parameters</td>
+                            <td>DOM Manipulation</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

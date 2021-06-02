@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Character Creation</title>
+    <meta name="description" content="Character Creation & Character Confirm">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/characterCreation.css">
+    <link type="text/css" rel="stylesheet" href="css/characterConfirm.css">
+     <link type="text/css" rel="stylesheet" href="css/scrollBar.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="farleft">
+        </div>
+        <div class="left">
+            <p>AVATAR</p>
+        </div>
+        <div class="middle">
+            <p>CHARACTER CREATION</p>
+        </div>
+        <div class="right">
+        </div>
+    </header>
+    <main id="main">
+        <div class="farleft">
+        </div>
+        <div class="left">
+            <div id="avatarBox">
+                <p>N/A</p>
+            </div>
+            <div class="previewButtons">
+                <button type="button" name="back" class="cycleButton">&lt;</button>
+                <button type="button" name="next" class="cycleButton">&gt;</button>
+            </div>
+            <p id="keepsakeTitle">KEEPSAKE</p>
+            <div id="keepsakeBox"> <!--By assigning these to a class they can be manipulated like an array with document.getElementsByClassName. A for loop is then use to cycle through them. The keepsake and keepsakeName have their own index nums assigned to zero. On arrow click their indexes cycle simultaneously.-->
+                <img class="keepsake" src="media/keepsake/cameraicon.png">
+                <img class="keepsake" src="media/keepsake/compassicon.png">
+                <img class="keepsake" src="media/keepsake/diaryicon.png">
+                <img class="keepsake" src="media/keepsake/flashlighticon.png">
+                <img class="keepsake" src="media/keepsake/glovesicon.png">
+                <img class="keepsake" src="media/keepsake/necklaceicon.png">
+                <img class="keepsake" src="media/keepsake/radioicon.png">
+                <img class="keepsake" src="media/keepsake/scarficon.png">
+                <img class="keepsake" src="media/keepsake/umbrellaicon.png">
+                <img class="keepsake" src="media/keepsake/watchicon.png">
+                <p class="keepsakeName">Camera<span class="keepsakeTipText">Allows the recording of a variety of things for recall or future use.</span></p>
+                <p class="keepsakeName">Compass<span class="keepsakeTipText">Can be set to search for specific persons, locations, and hidden paths and items.</span></p>
+                <p class="keepsakeName">Diary<span class="keepsakeTipText">Allows text logging of a variety for recall or future use.</span></p>
+                <p class="keepsakeName">Flashlight<span class="keepsakeTipText">Reveals hidden spirits and allows for their collection for future aid.</span></p>
+                <p class="keepsakeName">Gloves<span class="keepsakeTipText">Resist effects from a variety of hazards and permit the casting of fire.</span></p>
+                <p class="keepsakeName">Necklace<span class="keepsakeTipText">When worn permits dialogue with demons and other spirits.</span></p>
+                <p class="keepsakeName">Radio<span class="keepsakeTipText">Allows reception of messages and can be used to search for secret transmissions.</span></p>
+                <p class="keepsakeName">Scarf<span class="keepsakeTipText">Protects from hazardous hazes and can be used for face concealment.</span></p>
+                <p class="keepsakeName">Umbrella<span class="keepsakeTipText">Protects from rain and projectiles. Can be used to float down from high places.</span></p>
+                <p class="keepsakeName">Watch<span class="keepsakeTipText">Allows the manipulation of time without loss of progress.</span></p>
+            </div>
+            <div class="previewButtons">
+                <button type="button" name="back" class="cycleButton" id="keepsakeBackward" onclick="cycle(-1)">&lt;</button>
+                <button type="button" name="next" class="cycleButton" id="keepsakeForward" onclick="cycle(1)">&gt;</button>
+            </div>
+        </div>
+        <ul>
+        </ul>
+        <div class="middle">
+            <div id="characterInfo">
+                <div id="nameInputs">
+                    <div class="nameLine">
+                        <p>FIRST NAME:</p><input type="text" id="firstName">
+                    </div>
+                    <div class="nameLine">
+                        <p>LAST NAME:</p><input type="text" id="lastName">
+                    </div>
+                </div>
+                <div id="raceAndClass">
+                    <div class="selectionLine">
+                        <p>DISORDER:</p>
+                        <div id="disorderIcons">
+                            <img title="ANXIETY" id="anxiety" src="media/illnessesAndDisorders/anxiety/anxiety.png">
+                            <img title="DEPERSONALIZATION" id="depersonalization" src="media/illnessesAndDisorders/depersonalizationDisorder/depersonalization.png">
+                            <img title="DEPRESSION" id="depression" src="media/illnessesAndDisorders/depression/depression.png">
+                            <img title="NARCOLEPSY" id="narcolepsy" src="media/illnessesAndDisorders/narcolepsy/narcolepsy.png">
+                        </div>
+                    </div>
+                    <div class="selectionLine">
+                        <p>PERSONALITY:</p>
+                        <div id="personalityIcons">
+                            <img title="DECEIVER" id="deceiver" src="media/abilities/LnM/deceiver.png">
+                            <img title="JUST" id="just" src="media/abilities/HnH/just.png">
+                            <img title="PERFORMER" id="performer" src="media/abilities/DPnS/performer.png">
+                            <img title="SAINT" id="saint" src="media/abilities/FnC/saint.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="attributes">
+                    <p>ATTRIBUTES:</p>
+                    <div id="attributeValues">
+                        <table id="leftTable">
+                            <tr> <!--Adding a hidden property to tooltiptext class allows us to specify to display tooltip on hover in css. All attributes initialized to zero every time page loads.-->
+                                <td class="tooltip">Anger<span class="tooltiptext">Affects chance to automatically select aggressive responses.</span></td>
+                                <td id="angerValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Awkwardness<span class="tooltiptext">Affects chance to automatically prevent dialogue from starting.</span></td>
+                                <td id="awkwardnessValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Disgust<span class="tooltiptext">Affects chance to automatically remove responses that lead to immoral actions.</span></td>
+                                <td id="disgustValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Envy<span class="tooltiptext">Affects chance of automatically stealing items and affects Anger.</span></td>
+                                <td id="envyValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Fear<span class="tooltiptext">Affects chance of things being done quickly.</span></td>
+                                <td id="fearValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Happiness<span class="tooltiptext">Affects chance of automatically selecting responses that lead to moral actions.</span></td>
+                                <td id="happinessValue">0</td>
+                            </tr>
+                        </table>
+                        <table id="rightTable">
+                            <tr>
+                                <td class="tooltip">Love<span class="tooltiptext">Affects chance of befriending others and gaining information.<br>(Positvely as opposed to Pride)</span></td>
+                                <td id="loveValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Pride<span class="tooltiptext">Affects chance of befriending others and gaining information <br>(Negatively as opposed to Love).<br>Affects chance of automatically doing actions to gain benefits.</span></td>
+                                <td id="prideValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Sadness<span class="tooltiptext">Affects chances of automatically selecting responses that lead to difficult actions.</span></td>
+                                <td id="sadnessValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Shame<span class="tooltiptext">Affects chance to recover from immoral actions and raise positive stats.</span></td>
+                                <td id="shameValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Stress<span class="tooltiptext">Affects chance to raise all negative stats.</span></td>
+                                <td id="stressValue">0</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip">Stoicisim<span class="tooltiptext">Affects chance to lower all stats during interactions and events.</span></td>
+                                <td id="stoicismValue">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="disorderBox">
+                <div class="detailHeader"> <!--Depending on the box selected the disorder span and personality spans are filled accordingly.-->
+                    <p>DISORDER -&gt; <span id="disorder"></span></p>
+                </div>
+                <div id="disorderInfoBox">
+                    <p id="disorderInfo"></p>
+                </div>
+            </div>
+            <div id="personalityBox">
+                <div class="detailHeader">
+                    <p>PERSONALITY -&gt; <span id="personality"></span></p>
+                </div>
+                <div id="personalityInfoBox">
+                    <img id="abilityOne" src="">
+                    <p id="personalityInfoOne"></p>
+                    <img id="abilityTwo" src="">
+                    <p id="personalityInfoTwo"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="farleft">
+        </div>
+        <div class="left">
+            <button title="RETURN TO MAIN MENU" type="button" name="back" class="pageButton" id="back">BACK</button>
+        </div>
+        <div class="middle">
+        </div>
+        <div class="right">
+            <div id="buttonContainer"> 
+                <button title="RANDOMIZE KEEPSAKE AND ATTRIBUTES" type="button" name="generate" class="pageButton" id="generate" onclick="generate()">GENERATE</button>
+                <button title="CLEAR INPUT, SELECTION AND ATTRIBUTES" type="button" name="reset" class="pageButton" id="reset" onclick="reset()">RESET</button>
+                <button title="GO TO CHARACTER CONFIRM" type="button" name="next" class="pageButton" id="next" onclick="loadConfirm()">NEXT</button>
+            </div>
+        </div>
+        <div id="alertPopup">
+            <div id="iconContainer">
+                <img src="media/alert.png">  
+            </div>
+            <div id="textContainer">
+                <p id="alertText"></p>
+                <div id="alertButtons">
+                    <button type="button" name="OK" class="pageButton" id="alertOk" onclick="hideAlert()">OK</button>
+                </div>
+            </div>
+        </div>
+    </footer> <!--Everything within characterConfirm is hidden until player selects loadConfirm(). All it does is hide everything above this line and sets everything below to display: block;-->
+    <div id="characterConfirm">
+        <div id="characterProfile">
+            <div id="summaryAvatar">
+                <p>N/A</p>
+            </div>
+        </div>
+        <div id="summaryContainer">
+            <div id="characterSummary">
+                <p>First Name: <span id="firstNameSummary"></span></p>
+                <p>Last Name: <span id="lastNameSummary"></span></p>
+                <p>Disorder: <span id="disorderSummary"></span></p>
+                <p>Personality: <span id="personalitySummary"></span></p>
+                <p>Keepsake: <span id="keepsakeSummary"></span></p>
+                <p id="summaryAttributes">Attributes:</p>
+                <table id="leftAttributes">
+                    <tr>
+                        <td class="tooltip">Anger<span class="tooltiptext">Affects chance to automatically select aggressive responses.</span></td>
+                        <td id="angerFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Awkwardness<span class="tooltiptext">Affects chance to automatically prevent dialogue from starting.</span></td>
+                        <td id="awkwardnessFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Disgust<span class="tooltiptext">Affects chance to automatically remove responses that lead to immoral actions.</span></td>
+                        <td id="disgustFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Envy<span class="tooltiptext">Affects chance of automatically stealing items and affects Anger.</span></td>
+                        <td id="envyFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Fear<span class="tooltiptext">Affects chance of things being done quickly.</span></td>
+                        <td id="fearFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Happiness<span class="tooltiptext">Affects chance of automatically selecting responses that lead to moral actions.</span></td>
+                        <td id="happinessFinal"></td>
+                    </tr>
+                </table>
+                <table id="rightAttributes">
+                    <tr>
+                        <td class="tooltip">Love<span class="tooltiptext">Affects chance of befriending others and gaining information.<br>(Positvely as opposed to Pride)</span></td>
+                        <td id="loveFinal">0</td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Pride<span class="tooltiptext">Affects chance of befriending others and gaining information <br>(Negatively as opposed to Love).<br>Affects chance of automatically doing actions to gain benefits.</span></td>
+                        <td id="prideFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Sadness<span class="tooltiptext">Affects chances of automatically selecting responses that lead to difficult actions.</span></td>
+                        <td id="sadnessFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Shame<span class="tooltiptext">Affects chance to recover from immoral actions and raise positive stats.</span></td>
+                        <td id="shameFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Stress<span class="tooltiptext">Affects chance to raise all negative stats.</span></td>
+                        <td id="stressFinal"></td>
+                    </tr>
+                    <tr>
+                        <td class="tooltip">Stoicisim<span class="tooltiptext">Affects chance to lower all stats during interactions and events.</span></td>
+                        <td id="stoicismFinal"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="confirmPageButtons">
+            <p id="confirmHeader">CREATE A CHARACTER WITH THESE DETAILS?</p>
+                <button title="RETURN TO CHARACTER CREATE" type="button" name="back" class="pageButton" id="confirmBack" onclick="returnCharCreate()">BACK</button>
+                <button title="CONFIRM CHARACTER" type="button" name="next" class="pageButton" id="beginStory" onclick="beginStory()">CONFIRM</button>    
+        </div>
+    </div><!-- added jquery script to allow for some extra element manipulation. Included script to save user selections and input to transfer between pages. Something I learned via the locatStorage.setItem() method.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/createCharacter.js">
+    </script>
+</body>
+</html>

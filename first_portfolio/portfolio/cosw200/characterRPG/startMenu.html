@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NEIGHBORHOOD</title>
+    <meta name="description" content="Start Menu">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: "Coder's Crux";
+            animation: 1s load alternate ease-in-out;
+        }
+
+        @keyframes load {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        #logo {
+            position: fixed;
+            text-align: center;
+            top: 20%;
+            left: 0;
+            right: 0;
+        }
+
+        #logo img {
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #61b0a4;
+            width: 50%;
+        }
+
+        #startButtons {
+            position: fixed;
+            margin: 0 auto;
+            top: 40%;
+            width: 100%;
+        }
+
+        #startButtons button {
+            padding: 2px;
+            display: block;
+            border: none;
+            font-size: 150%;
+            text-transform: uppercase;
+            margin: 0 auto;
+            background: none;
+            color: white;
+            margin-top: 10px;
+            font-family: "Coder's Crux";
+        }
+
+        #startButtons button:hover {
+            cursor: pointer;
+        }
+
+        #startButtons button:hover:before {
+            position: fixed;
+            left: 0;
+            right: 100px;
+            content: "> ";
+            color: #61b0a4;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-size: 150%;
+        }
+
+        #option,
+        #exit {
+            color: #363740 !important;
+        }
+        
+        #start:focus, #start:active, #option:focus, #option:active
+        #exit:focus, #option:active{
+            outline: none !important;    
+        }
+
+        #name {
+            color: #61b0a4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="media/logo.gif">
+    </div>
+    <div id="startButtons">
+        <button type="button" name="start" id="start">Start</button>
+        <button type="button" name="option" id="option">Options</button>
+        <button type="button" name="exit" id="exit">Exit</button>
+    </div>
+    <footer>
+        <p>Produced by <span id="name">Daniel P.</span></p>
+    </footer>
+    <script type="text/javascript">
+        document.getElementById("start").onclick = function() {
+            location.href = "character.html"
+        }
+    </script>
+</body>
+</html>

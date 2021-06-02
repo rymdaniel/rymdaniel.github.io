@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 550px;
+	margin: 0 auto;
+	padding: 1em;
+	border: 1px solid navy;
+}
+h1 {
+    text-align: left;
+    margin: 0;
+	padding: .25em;
+	color: navy;
+	font-size: 240%;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: .25em;
+    color: darkcyan;
+    font-size: 140%;
+}
+img  {
+    float: left;
+    margin: 0 1em;
+    padding: .20em;
+    height: 35%;
+    width: 35%;
+}
+p {
+	margin: 0;
+	padding-bottom: .5em;
+}

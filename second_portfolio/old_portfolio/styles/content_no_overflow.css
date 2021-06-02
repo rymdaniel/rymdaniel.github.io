@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
+
+a {
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    font-family: VT323;
+    font-size: 25px;
+    /*color: #ff66cc;*/
+    color: white;
+    padding: 2px 17px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover,
+nav a:focus {
+    box-shadow: 1px 1px 3px white, -1px -1px 3px white;
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
+nav {
+    padding-top: 30px;
+    position: relative;
+}
+
+.main {
+    top: 0;
+    position: absolute;
+    text-align: center;
+    margin: 50px 50px 30px;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 1;
+    text-shadow: 5px 0 5px rgba(251, 0, 231, 0.35), 0 5px 5px rgba(0, 233, 235, 0.35), -5px 0 1px rgba(0, 242, 14, 0.5), 0 -5px 5px rgba(244, 45, 0, 0.35), 5px 0 5px rgba(59, 0, 226, 0.35);
+    animation: flicker2 0.1s infinite;
+}
+
+h1 {
+    font-size: calc(45px + 2vw);
+    font-family: Creepster;
+    pointer-events: none;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Cutive Mono;
+}
+
+#back {
+    padding: 30px;
+    position: relative;
+    right: 2px;
+    list-style-type: none;
+}
+
+img {
+    width: 300px;
+    position: relative;
+}
+
+img:hover,
+img:focus {
+    box-shadow: 4px 0px 15px white,
+        -4px 0px 15px white,
+        0px 4px 15px white,
+        0px -4px 15px white;
+}
+
+.video-container {
+    width: 590px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+iframe {
+    padding: 10px;
+    border: 3px solid white;
+}
+
+main h2,
+main p {
+    text-align: justify;
+    font-family: Cutive Mono;
+    padding: 10px 0 20px 0;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+.links a {
+    text-shadow: 5px 0 5px rgba(251, 0, 231, 0.35), 0 5px 5px rgba(0, 233, 235, 0.35), -5px 0 1px rgba(0, 242, 14, 0.5), 0 -5px 5px rgba(244, 45, 0, 0.35), 5px 0 5px rgba(59, 0, 226, 0.35);    
+}
+
+.links a:hover,
+.links a:focus {
+    box-shadow: 1px 1px 3px white, -1px -1px 3px white;
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
+.divider {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 2px solid rgba(20,100,159,0.50);
+}
+
+@media print {
+    a {
+        color: black;    
+    }
+    
+    .main {
+        color: black;
+    }
+}

@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2E2B37;
+	font-family: 'Karla', sans-serif;
+    color: #333;}
+
+#lighthouse {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    filter: hue-rotate(350deg);
+    filter: grayscale(0.2);
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Modal Box */
+#modal {
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+    border: 9px solid #a28fb7;
+    border-radius: 10px;
+    background-color: #2E2B37;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    padding: 20px;
+}
+
+#modal #close {
+    position: relative;
+    background-color: #a28fb7;
+    font-size: 2em;
+    display: block;
+    float: right;
+    color: #1C1C1C;
+    padding: 0px 7px;
+    z-index: 100;
+}
+
+#modal #close:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#modal #title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    z-index: 99;
+}
+
+#modal #preview {
+    float: left;
+    margin-right: 10px;
+}
+
+#modal #description {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+/* Header */
+header {
+	background-color: #1C1C1C;
+	margin: 0 0 40px 0;
+	padding: 10px 0 0 0;
+	min-height: 50px;
+	text-align: center;}
+
+#links {
+    position: absolute;
+    padding: 10px;
+}
+
+#links a {
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.current {
+    color: #a28fb7 !important;
+}
+
+#alert {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+  background-image: url('../img/lighthouse-films.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px auto 5px auto;
+  width: 593px;
+  height: 23px;
+  text-align: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;}
+
+h2 {
+	font-size: 180%;
+	margin: 0;}
+h2, h4 {
+	font-weight: normal;}
+h4 {
+	color: #333;
+	display: inline-block;
+	font-size: 120%;
+	margin: 5px 0 5px 0;}
+
+/* Filter and search options */
+#price-range {
+	width: 370px;
+	margin: 10px auto 30px auto;
+	text-align: center;
+	font-weight: bold;}
+#value-min, #value-max {
+	width: 100px; 
+	border: none; 	
+	background-color: #f1f1f1;
+	font-family: 'Karla', sans-serif;}
+#slider {margin: 30px 0 30px 0;}
+/* Filter and search options */
+#buttons, #search {
+	text-align: center;
+	margin-bottom: 30px;}
+
+/* Filter buttons */
+button {
+	background-color: #1C1C1C;
+	border: none;
+	padding: 3px 10px 4px 10px;
+	border-radius: 4px;
+	color: white;
+	font-family: 'Karla', sans-serif;
+	font-size: 100%;}
+
+button:hover, button.active {
+	background-color: #766787;
+	color: #fff;
+	cursor: pointer;}
+
+
+/* Search input */
+input {
+	font-size: 120%;
+	border: 1px solid #999;
+	padding: 5px;}
+input:hover {
+	border: 1px solid #666;}
+input:focus {
+	border: 1px solid #00cccc;
+	outline: none;}
+
+
+/* Gallery of images */
+#gallery {
+	text-align: center;
+	margin: 0 auto;}
+
+#gallery img {
+    background: blue;
+	width: 208px;
+	height: 300px;
+	border-radius: 3px;
+	border: 8px solid #fff;
+	margin: 10px;
+	}
+
+#gallery img:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px white, -2px -2px 5px white, -2px 2px white, 2px -2px white;
+}
+
+/* Table styles */
+table {
+	margin: 0 auto;
+	width: 780px;}
+table#rates	{width: 380px;}
+th, td {
+	border-radius: 3px;
+	color: #333;
+	padding: 7px 10px 5px 10px;
+	min-width: 9em;
+	text-align: left;}
+th {
+	background-color: #d7d7d7;
+	font-weight: bold;
+	text-transform: uppercase;}
+td {
+	background-color: #fff;}
+table.sortable th:hover {
+	cursor: pointer;}
+th.ascending, th.descending, table.sortable th:hover {
+	background-color: #00cccc;
+	color: #fff;}
+
+/* Arrows for table sorting */
+th.ascending:after {
+	font-size: 60%;
+    content: '\25B2';
+    float: left;
+	padding: 4px 5px 0 0;}
+th.descending:after {
+	font-size: 60%;
+    content: '\25BC';
+    float: left;
+	padding: 4px 5px 0 0;}
+
+.about {
+	width: 780px;
+	margin: 0 auto 40px auto;}
+.about:after {
+  content: "";
+  display: table;
+  clear: both;}
+.about h2 {
+  text-align: left; 
+  float: left;}
+
+.bio {
+	float: right;
+	width: 195px;}
+.bio img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;}
+
+.location {
+	padding-left: 74px;
+	background-image: url('../img/pointer.png');
+	background-repeat: no-repeat;
+	background-position: 60px 1px;
+	font-size: 90%;}

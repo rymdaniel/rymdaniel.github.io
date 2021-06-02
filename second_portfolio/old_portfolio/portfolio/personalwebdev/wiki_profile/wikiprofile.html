@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBDEV: Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+            
+        @font-face {
+            font-family: Monaco;
+            src: url(monaco.ttf);
+        }
+        
+        .bio {
+            width: 350px;
+            background: pink;
+            border: 1px solid maroon;
+            padding: 10px;
+            text-align: center;
+            font-family: Monaco;
+            color: maroon;
+            position: relative;
+            margin: 35px auto 0;
+            box-shadow: 5px 5px 10px gray;
+        }
+        
+        #name {
+            margin: 5px 0 10px 0;
+            font-weight: bold;
+        }
+        
+        .head {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .head img {
+            width: 99.5%;
+            border: 1px solid maroon;
+            margin-bottom: 10px;
+        }
+                
+        .main {            
+            width: 100%;
+        }
+        
+        .main table {
+            font-size: 12px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 2px;
+        }
+        
+        .main td:nth-child(odd) {
+            width: 35%;
+            font-weight: bold;
+        }
+        
+        .main td:nth-child(even) {
+            width: 65%;
+        }
+        
+        .pending {
+            letter-spacing: 7px;
+            display: inline-block;
+            position: absolute;
+            bottom: 22px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bolder;
+            color: rgba(128,0,0,0.6);
+            pointer-events: none;
+        }
+        
+        footer {
+            width: 100%;
+            height: 70px;
+        }
+        
+        footer a {
+            width: 100%;
+        }
+        
+        #back {
+            width: 80px;
+            padding: 5px;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: Monaco;
+            top: 20px;
+            font-weight: bold;
+            color: maroon;
+            text-decoration-line: none;
+            background: pink;
+            border: 1px solid maroon;
+            box-shadow: 5px 5px 10px gray;
+        }
+        
+        #back:hover {
+            background: #944040;
+            color: white;
+            border: 1px solid #944040;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bio">
+        <p id="name">Daniel Palacios</p>
+        <div class="head">
+            <p class="pending">Profile Pending</p>
+            <img src="avatar.jpg" alt="Profile Picture">
+        </div>
+        <div class="main">
+            <table>
+                <tr>
+                    <td>Born</td>
+                    <td>Daniel Eduardo Palacios</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>June 18, 1992 (age 26)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bell, CA</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Residence</td>
+                    <td>Lakewood, CA, U.S.</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Nationality</td>
+                    <td>American</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Citizenship</td>
+                    <td>United States of America</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Education</td>
+                    <td>Otis College of Art and Design</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Long Beach City College</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Photographer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Designer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Fine Artist</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Height</td>
+                    <td>5 ft. 4 in.</td>
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td>162.56 cm</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Weight</td>
+                    <td>140 lbs.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>63.5 kg</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Political Party</td>
+                    <td>Republican</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Atlas</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <!-- <a href="../webdev_stuff.html" id="back"> &laquo; BACK</a> -->
+    </footer>
+</body>
+</html>

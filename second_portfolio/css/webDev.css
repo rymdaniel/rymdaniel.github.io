@@ -1,0 +1,284 @@
+/* START PREVIEW GALLERY */
+
+#previewContainer {
+    margin: 0 auto;
+    width: 60%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.preview {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 220px;
+}
+
+.preview h1 {
+    width: 200px;
+}
+
+#previewContainer img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#previewContainer img:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* END IMAGE GALLERY*/
+
+/* START MODAL */
+
+#modalContent {
+    display: none;
+}
+
+#modal {
+    box-sizing: border-box;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-width: 90%;
+    height: 80% !important;
+    width: 60%;
+    height: 55%;
+    position: fixed;
+    top: 80px;
+    background: white;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+#modalClose {
+    position: sticky;
+    display: block;
+    float: right;
+    left: 10px;
+    top: 10px;
+    margin: 10px;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    z-index: 1000;
+}
+
+#modalClose:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#modalLeft {
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+
+#modalLeft img {
+    position: relative;
+    width: 80%;
+    top: 20px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+#thumbnailContainer {
+    width: 100%;
+}
+
+#modalRight {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+
+#thumbnailContainer a {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    color: blue;
+}
+
+#description {
+    padding: 10px;
+}
+
+#modalContent {
+    padding-right: 10px;
+    display: block;
+    position: relative;
+    top: 38px;
+}
+
+#modalContent h1, #modalContent table {
+    text-align: center;
+}
+
+#modalContent table {
+    margin: 0 auto;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+#modalContent table td {
+    width: 50%;
+    border: 1px solid black;
+}
+
+#hiddenModalContent {
+    display: none;
+}
+
+.workLink {
+    display: block;
+    margin: 0 auto;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    color: black;
+}
+
+/* DESKTOPS */
+
+@media (min-width: 1025px) {
+    #modal {
+        min-width: 50%;
+    }
+    
+    #modalLeft {
+        float: left;
+        width: 40% !important;
+    }
+    
+    
+    #modalRight {
+        float: right;
+        width: 60%;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #modalLeft img {
+        width: 40%;
+        left: 20px;
+    }
+}
+
+@media (orientation: landscape) {
+    #modal {
+        height: 70vh !important;
+    }
+    
+    #modalLeft{
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+
+/*@media screen and (max-width: 1360px) {
+    #modalLeft {
+        width: 40%;
+        float: left;
+    }
+    
+    #modalRight {
+        width: 60%;
+        float: right;
+    }
+    
+    #modal img {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    #previewContainer {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .preview {
+        position: relative;
+        width: 40%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .preview h1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #modal {
+        position: fixed;
+        top: 100px;
+        min-width: 90%;
+        max-height: 0px;
+        min-height: 70%;
+        overflow: auto;
+    }
+
+    #modal img {
+        left: -20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    #modalLeft {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        height: auto;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    #modalRight {
+        float: none;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    #modalContent #description {
+        position: relative;
+        display: block;
+        min-width: 80% !important;
+        margin: 10px;
+    }
+    
+    .preview h1 {
+        text-align: center;
+        display: block;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 506px) {
+    .preview {
+        margin: 20px auto 0;
+        padding: 0;
+        width: 100%;
+    }
+}*/

@@ -1,0 +1,86 @@
+{
+    "portfolio": {
+            "header":"First Portfolio (HTML Focused)",
+            "src":"media/portfoliosite.png",
+            "href":"old_portfolio/splash.html",
+            "description":"Our final assignment in my Intro to Web Development Course was using all the things we had learned to create an online portfolio. This site contained all the lab assignments and projects we did throughout the semester. If you wish to see a more in depth look at all I do, including things besides web development, then by all means visit this site!",
+            "skillTable":"<table><tr><td>@font-face</td><td>animation</td></tr><tr><td>:hover</td><td>z-index</td></tr><tr><td>Folder Structure</td><td>Design Continuity</td></tr><tr><td>viewport</td><td>iframe</td></tr><tr><td>Google Fonts</td><td>Lightbox Gallery</td></tr></table>"
+        },
+    "wiki" : {
+        "header":"Wiki Profile",
+        "src":"media/wikiProfile.jpg",
+        "href":"old_portfolio/portfolio/personalwebdev/wiki_profile/wikiprofile.html",
+        "description":"I want to create something similar to a wiki profile but with some tweaks. I wanted custom colors and fonts and turn into something that can be used as a social media profile box.",
+        "skillTable":"<table> <tr> <td>@font-face</td> <td>nth-child</td> </tr> <tr> <td>tables</td> </tr> </table>"
+    },
+    "inputGame": {
+            "header":"Input & Output (Math Game)",
+            "src":"media/inputGame.png",
+            "href":"https://codepen.io/rymdaniel/full/EQoPMz",
+            "description":"For this assignment we were asked to create a game that generated random numbers and asks the user to sum those numbers. With the use of a counter we can keep track of the user's correct and incorrect responses.",
+            "skillTable":"<table> <tr> <td>Functions</td> <td>Random numbers</td> </tr> <tr> <td>setInterval</td> <td>Console Log</td> </tr> <tr> <td>clearInterval</td> <td>Return statement</td> </tr> <tr> <td>DOM manipulation</td> <td>onclick</td> </tr> <tr> <td>IF statements</td> <td>Event Listener</td> </tr> <tr> <td>Math object</td></tr> </table>"
+        },
+    "calculator": {
+            "header":"Functions, If Statements, and Math",
+            "src":"media/calculator.png",
+            "href":"https://codepen.io/rymdaniel/full/qxKZNM/",
+            "description":"This lab assignment required us to retrieve and manipulate user input with Javascript.",
+            "skillTable":"<table> <tr> <td>Functions</td> <td>If Else statements</td> </tr> <tr> <td>parseInt</td> <td>DOM manipulation</td> </tr> <tr> <td>isNaN</td> <td>new Date()</td> </tr> </table>"
+        },
+    "stringsArrays": {
+            "header":"String & Array Manipulation",
+            "src":"media/stringsAndArrays.png",
+            "href":"https://codepen.io/rymdaniel/full/eVxEpR/",
+            "description":"For this assignment we were asked to manipulate user input in a variety of ways to learn about string methods and arrays.",
+            "skillTable":"<table> <tr> <td>Functions</td> <td>If statement</td> </tr> <tr> <td>toLowerCase() & toUpperCase</td> <td>DOM manipulation</td> </tr> <tr> <td>substring()</td> <td>new Date()</td> </tr> <tr> <td>substr()</td> <td>replace()</td> </tr> <tr> <td>split()</td> <td>toString()</td> </tr> <tr> <td>splice()</td> <td>push()</td> </tr> <tr> <td>reverse()</td> <td>for loop</td> </tr> </table>"
+        },
+    "charGen": {
+            "header":"Character Generator / Game Concept",
+            "src":"media/neighborhood.png",
+            "href":"old_portfolio/portfolio/cosw200/characterRPG/startMenu.html",
+            "description":"Our class was assigned with creating a simple character generator that randomized basic characteristics such as a name, class, and age. Given this was our first official Javascript project I was eager to go beyond all my previous work as usual. I began the day it was assigned and learned so much from this first assignment. I included sample art and story to add to the aesthetic of it all.",
+            "skillTable":"<table><tr><td>@font-face</td> <td>animation</td> </tr> <tr> <td>:hover</td> <td>z-index</td> </tr><tr><td>Folder Structure</td> <td>Design continuity</td> </tr> <tr> <td>localStorage</td> <td>iframe</td> </tr> <tr> <td>Google Fonts</td> <td>Functions</td> </tr> <tr> <td>tables</td> <td>Random numbers</td> </tr> <tr> <td>Objects</td> <td>DOM  manipulation</td> </tr> <tr> <td>Event listeners</td> <td>Parameters & Arguments</td> </tr></table>"
+        },
+    "jsQualities": {
+            "header":"Top Qualities of a Javascript Programmer",
+            "src":"media/jsQualities.png",
+            "href":"https://codepen.io/rymdaniel/full/WzjwXK/",
+            "description":"This assignment required we create a list of qualities we think a Javascript programmer should have. It required three buttons: one to add two qualities, one to highlight three randomly, and a button to delete one list item. A final requirement was to have output somewhere on the page declaring the changes that had been made to the list.",
+            "skillTable":"<table> <tr> <td>Functions</td> <td>For loops</td> </tr> <tr> <td>Arrays</td> <td>While loops</td> </tr> <tr> <td>Parameters & Arguments</td> <td>DOM manipulation</td> </tr> <tr><td>childNodes()</td><td>appendChild()</td></tr><tr><td>removeChild()</td><td>createTextNode()</td></tr></table>"
+        },
+    "events": {
+            "header":"Events & Validation",
+            "src":"media/events.png",
+            "href":"https://codepen.io/rymdaniel/full/bvJVGy",
+            "description":"This page uses events to alert the user when validating their input for their username and passwords.",
+            "skillTable":"<table> <tr> <td>DOM manipulation</td> <td>Functions</td> </tr> <tr> <td>If Else statements</td> <td>preventDefault()</td> </tr> <tr> <td>Input validation</td> <td>NOT, OR, AND logic</td> </tr> <tr> <td>Event listeners</td> </tr> </table>"
+        },
+    "ajaxJSON": {
+            "header":"AJAX & JSON",
+            "src":"media/ajaxJSON.png",
+            "href":"old_portfolio/portfolio/cosw200/Homework_8-AJAX_JSON/example.html",
+            "description":"This page was made to practice using AJAX and JSON for presenting information.",
+            "skillTable":"<table> <tr> <td>AJAX</td> <td>JSON files</td> </tr> <tr> <td>JQuery</td> <td>JQuery event handlers</td> </tr> <tr> <td>DOM manipulation</td> <td>preventDefault()</td> </tr> </table>"
+        },
+    "jqueryAPIs": {
+            "header":"Using JQuery APIs",
+            "src":"media/jqueryAPIs.png",
+            "href":"https://codepen.io/rymdaniel/full/aGygmW",
+            "description":"This site was created to demonstrate the use of JQuery APIs.",
+            "skillTable":"<table> <tr> <td>JQuery APIs</td> <td>External resources</td> </tr> </table>"
+        },
+    "sortFilter": {
+            "header":"Sorting & Filtering",
+            "src":"media/sortFilter.png",
+            "href":"old_portfolio/portfolio/cosw200/Homework_9_Sort_and_Filter/filter-tags.html",
+            "description":"This page allows the user to sort elements on the page by different categories.",
+            "skillTable":"<table> <tr> <td>AJAX</td> <td>JSON files</td> </tr> <tr> <td>JQuery</td> <td>JQuery event handlers</td> </tr> <tr> <td>DOM manipulation</td> <td>preventDefault()</td> </tr> </table>"
+        },
+    "validation": {
+            "header":"More Input Validation",
+            "src":"media/validation.png",
+            "href":"old_portfolio/portfolio/cosw200/Homework_10_Validation/index.html",
+            "description":"This site uses HTML and JS validation for user input and displays alerts when input is invalid.",
+            "skillTable":"<table> <tr> <td>AJAX</td> <td>JSON files</td> </tr> <tr> <td>If Else statements</td> <td>JQuery event handlers</td> </tr> <tr> <td>DOM manipulation</td> <td>AND logic</td> </tr> <tr> <td>Document ready</td> <td>JQuery delay</td> </tr> <tr> <td>Event listeners</td> <td>HTML forms</td> </tr> <tr> <td>preventDefault()</td> <td>Avatar changer</td> </tr> <tr> <td>Character counter</td> <td>Editable Bio</td> </tr> </table>"
+        }
+}

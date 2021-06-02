@@ -1,0 +1,86 @@
+{
+    "first_portfolio": {
+            "header":"First Portfolio (HTML Focused)",
+            "src":"media/previews/firstportfolio.png",
+            "href":"first_portfolio/splash.html",
+            "description":"Our final assignment in my Intro to Web Development Course was using all the things we had learned to create an online portfolio. This site contained all the lab assignments and projects we did throughout the semester. If you wish to see a more in depth look at all I do, including things besides web development, then by all means visit this site!",
+            "skillTable": ["@font-face", "animation", ":hover", "z-index", "Folder Structure", "Design Continuity", "viewport", "iframe", "Google Fonts", "Lightbox Gallery"]
+        },
+    "second_portfolio": {
+        "header":"Second Portfolio (JS Focused)",
+        "src":"media/previews/secondportfolio.png",
+        "href":"second_portfolio/index.html",
+        "description":"Our final assignment in my Intro to Javascript Course was using all the things we had learned to create an online portfolio. This site contained all the lab assignments and projects we did throughout the semester. If you wish to see a more in depth look at all I do, including things besides web development, then by all means visit this site!",
+        "skillTable": ["@font-face", "animation", ":hover", "z-index", "Folder Structure", "Design Continuity", "viewport", "jQuery", "Google Fonts", "Custom Modal", "AJAX"]
+    },
+    "wiki" : {
+        "header":"Wiki Profile",
+        "src":"media/previews/wikiProfile.jpg",
+        "href":"first_portfolio/portfolio/personalwebdev/wiki_profile/wikiprofile.html",
+        "description":"I want to create something similar to a wiki profile but with some tweaks. I wanted custom colors and fonts and turn into something that can be used as a social media profile box.",
+        "skillTable": ["@font-face", "nth-child", "tables"]
+    },
+    "inputGame": {
+            "header":"Input & Output (Math Game)",
+            "src":"media/previews/inputGame.png",
+            "href":"https://codepen.io/rymdaniel/full/EQoPMz",
+            "description":"For this assignment we were asked to create a game that generated random numbers and asks the user to sum those numbers. With the use of a counter we can keep track of the user's correct and incorrect responses.",
+            "skillTable": ["Functions", "Random numbers", "setInterval", "Console Log", "clearInterval", "Return statement", "DOM manipulation", "onclick", "IF statements", "Event Listener", "Math object"]
+        },
+    "calculator": {
+            "header":"Functions, If Statements, and Math",
+            "src":"media/previews/calculator.png",
+            "href":"https://codepen.io/rymdaniel/full/qxKZNM/",
+            "description":"This lab assignment required us to retrieve and manipulate user input with Javascript.",
+            "skillTable": ["Functions", "If Else statements", "parseInt", "DOM manipulation", "isNaN", "new Date()"]
+        },
+    "stringsArrays": {
+            "header":"String & Array Manipulation",
+            "src":"media/previews/stringsAndArrays.png",
+            "href":"https://codepen.io/rymdaniel/full/eVxEpR/",
+            "description":"For this assignment we were asked to manipulate user input in a variety of ways to learn about string methods and arrays.",
+            "skillTable": ["Functions", "IF Statements", "toLowerCase() & toUpperCase()", "DOM manipulation", "substring()", "new Date()", "substr()", "replace()", "split()", "toString()", "splice()", "push()", "reverse()", "for loop"]
+        },
+    "charGen": {
+            "header":"Character Generator / Game Concept",
+            "src":"media/previews/neighborhood.png",
+            "href":"first_portfolio/portfolio/cosw200/characterRPG/startMenu.html",
+            "description":"Our class was assigned with creating a simple character generator that randomized basic characteristics such as a name, class, and age. Given this was our first official Javascript project I was eager to go beyond all my previous work as usual. I began the day it was assigned and learned so much from this first assignment. I included sample art and story to add to the aesthetic of it all.",
+            "skillTable": ["@font-face", "animation", ":hover", "z-index", "file & folder structure", "design continuity", "localStorage", "iframe", "Google fonts", "functions", "tables", "random numbers", "objects", "event listeners", "paramters & arguments"]
+        },
+    "jsQualities": {
+            "header":"Top Qualities of a Javascript Programmer",
+            "src":"media/previews/jsQualities.png",
+            "href":"https://codepen.io/rymdaniel/full/WzjwXK/",
+            "description":"This assignment required we create a list of qualities we think a Javascript programmer should have. It required three buttons: one to add two qualities, one to highlight three randomly, and a button to delete one list item. A final requirement was to have output somewhere on the page declaring the changes that had been made to the list.",
+            "skillTable": ["Functions", "for loops", "arrays", "while loops", "paramters & arguments", "DOM manipulation", "childNodes()", "appendChild()", "removeChild()", "createTextNode()"]
+        },
+    "events": {
+            "header":"Events & Validation",
+            "src":"media/previews/events.png",
+            "href":"https://codepen.io/rymdaniel/full/bvJVGy",
+            "description":"This page uses events to alert the user when validating their input for their username and passwords.",
+            "skillTable": ["DOM manipulation", "functions", "IF-ELSE statments", "preventDefault()", "input validation", "NOT, OR, AND logic", "event listeners"]
+        },
+    "jqueryAPIs": {
+            "header":"Using JQuery APIs",
+            "src":"media/previews/jqueryAPIs.png",
+            "href":"https://codepen.io/rymdaniel/full/aGygmW",
+            "description":"This site was created to demonstrate the use of JQuery APIs.",
+            "skillTable":["jQuery APIs", "External resources"]
+        },
+    "sortFilter": {
+            "header":"Sorting & Filtering",
+            "src":"media/previews/sortFilter.png",
+            "href":"first_portfolio/portfolio/cosw200/Homework_9_Sort_and_Filter/filter-tags.html",
+            "description":"This page allows the user to sort elements on the page by different categories.",
+        "skillTable": ["AJAX", "JSON", "jQuery", "jQUery event handlers", "DOM manipulation", "preventDefault()"]
+        },
+    "validation": {
+            "header":"More Input Validation",
+            "src":"media/previews/validation.png",
+            "href":"first_portfolio/portfolio/cosw200/Homework_10_Validation/index.html",
+            "description":"This site uses HTML and JS validation for user input and displays alerts when input is invalid.",
+            "skillTable": ["AJAX", "JSON", "IF-ELSE statments", "jQUery event handlers", "DOM manipulation", "AND logic", "Document Ready", "jQuery delay", "event listeners", "HTML forms", "preventDefault()", "avatar changer", "character counter", "editable bio"]
+        }
+}

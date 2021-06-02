@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 12: Filtering, Searching, and Sorting</title>
+    <link rel="stylesheet" href="css/c12-filter-tags.css" />
+  </head>
+  <body>
+    <header>
+        <div id="links">
+            <a href="#" class="current">Movie Posters</a>
+            <a href="sort-table.html">Movie List Table</a>
+        </div>
+      <h1>Lighthouse Films</h1>
+    </header>
+    <div id="buttons"></div>
+      <p id="alert"></p>
+    <div id="gallery">
+      <img src="img/p1.jpg" data-tags="Drama,Surreal" alt="Neighborhood" id="neighborhood">
+      <img src="img/p2.jpg" data-tags="Drama" alt="If Not For You" id="ifNotForYou">
+      <img src="img/p3.jpg" data-tags="Western,Crime" alt="Immoral Blood" id="immoralBlood">
+      <img src="img/p4.jpg" data-tags="Crime,Sci Fi" alt="Hikari" id="hikari">
+      <img src="img/p5.jpg" data-tags="Drama,Sci Fi" alt="Otkaz" id="otkaz"> 
+      <img src="img/p6.jpg" data-tags="Crime,Surreal" alt="Yeoja" id="yeoja">
+      <img src="img/p7.jpg" data-tags="Western" alt="Los Desesperados" id="losDesesperados">
+      <img src="img/p8.jpg" data-tags="Drama,Crime" alt="The Love of Sin" id="theLoveOfSin">   
+      <img src="img/p9.jpg" data-tags="Sci Fi,Surreal" alt="Void King" id="voidKing">
+    </div>
+      <div id="modal">
+          <button type="button" id="close">&times;</button>
+            <h2 id="title"></h2>
+            <img id="preview" src="">
+            <p id="description"></p>
+      </div>
+      <img src="img/lighthouse.png" id="lighthouse">
+    <script src="js/jquery.js"></script>
+    <script src="js/filter-tags.js"></script>
+      <script src="js/modal.js"></script>
+  </body>
+</html>

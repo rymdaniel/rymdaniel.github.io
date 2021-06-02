@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Extras</title>
+    <meta name="description" content="COSW 200 - RPG Story">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/extras.css">
+    <link type="text/css" rel="stylesheet" href="css/scrollBar.css">
+</head>
+
+<body>
+    <div id="leftContainer">
+        <div id="logoAndTitle">
+            <img src="media/logo.gif">
+            <p>INFO &amp; ART</p>
+        </div>
+    </div>
+    <nav>
+        <div id="infoLinks">
+            <p id="citiesAndTowns">CITIES &amp; TOWNS</p>
+            <p id="characters">CHARACTERS</p>
+            <p id="disorders">DISORDERS</p>
+            <p id="personalities">PERSONALITIES</p>
+            <p id="attributes">ATTRIBUTES</p>
+        </div>
+    </nav>
+    <main>
+        <iframe id="iframe" src=""></iframe>
+        <button title="TO START MENU" type="button" name="mainMenu" class="pageButton" id="mainMenu" onclick="location.href =  'startMenu.html'">MAIN MENU</button>
+    </main>
+    <script type="text/javascript"> /*Depending on the link that's clicked the page's iframe changes content*/
+        document.getElementById("citiesAndTowns").addEventListener("click", function() {
+            document.getElementById("iframe").src = "citiesAndTowns.html";
+        });
+        
+        document.getElementById("characters").addEventListener("click", function() {
+            document.getElementById("iframe").src = "characters.html";
+        });
+        
+        document.getElementById("disorders").addEventListener("click", function() {
+            document.getElementById("iframe").src = "disorders.html";
+        });
+        
+        document.getElementById("personalities").addEventListener("click", function() {
+            document.getElementById("iframe").src = "personalities.html";
+        });
+        
+        document.getElementById("attributes").addEventListener("click", function() {
+            document.getElementById("iframe").src = "attributes.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+#characterConfirm {
+    display: none;
+    top: 13.3%;
+    width: 50%;
+    height: 72.8%;
+    position: fixed;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: 0.2s fade forwards ease-in-out;
+    /*opacity: 0.9;*/
+}
+
+#confirmHeader {
+    position: relative;
+    margin-bottom: 13px;
+    color: #61b0a4;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#characterProfile {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+   
+#summaryContainer {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+#summaryAvatar {
+    border: 1px solid white;
+    width: 80%;
+}
+
+#summaryAvatar:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#summaryAvatar p {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 40%;
+    font-size: 6vw;
+    color: #363740;
+}
+
+#characterSummary {
+    width: 89%;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
+
+#characterSummary p {
+    padding-bottom: 5%;
+}
+
+#summaryAttributes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#leftAttributes, #rightAttributes {
+    position: relative;
+    float: left;
+    width: 49%;
+    line-height: 43px;
+}
+
+#rightAttributes{
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+
+#leftAttributes td:nth-child(even), #rightAttributes td:nth-child(even) {
+    color: #61b0a4;
+    float: right;
+    padding-right: 5px;
+}
+
+#confirmPageButtons {
+    text-align: center;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBDEV: Receipt</title>
+    <style>
+        @font-face {
+            font-family: Merchant Copy;
+            src: url(merchant_copy.ttf);
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        .receipt {
+            width: 450px;
+            background: white;
+            border: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+            font-family: "Merchant Copy";
+            color: black;
+            position: relative;
+            margin: 35px auto 0;
+            box-shadow: 5px 5px 10px gray;
+            font-size: 2em;
+        }
+        
+        .breakline:after {
+            /*content: "===============================================================================";*/
+            content: "*";
+            width: 100%;
+            height: 2em;
+            position: relative;
+            z-index: 100;
+            color: black;
+            font-size: 0.5em;
+        }
+     
+        .head {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 2px dashed black;
+        }
+          
+        .main {            
+            width: 100%;
+        }
+        
+        .main table {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 2px;
+        }
+        
+        .main td:nth-child(odd) {
+            width: 70%;
+        }
+        
+        .main td:nth-child(even) {
+            width: 30%;
+            text-align: right;
+        }
+        
+        footer {
+            width: 100%;
+            height: 70px;
+        }
+        
+        footer a {
+            width: 100%;
+        }
+        
+        #back {
+            width: 80px;
+            padding: 5px;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: Courier;
+            top: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration-line: none;
+            background: white;
+            border: 1px solid gray;
+            box-shadow: 5px 5px 10px gray;
+        }
+        
+        #back:hover {
+            background: gray;
+            color: white;
+            border: 1px solid gray;
+        }
+        
+        p {
+            padding: 5px;
+        }
+        
+        #center {
+            text-align: center;
+        }
+        
+        #bottomborder {
+            padding-bottom: 10px;
+            border-bottom: 2px dashed black;
+        }
+        
+        @media print {
+            .receipt {
+                box-shadow: none;
+            }
+            
+            #back {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="head">
+            <p>Raven Press #013</p>
+            <p>1387 Sunbeam Dr.</p>
+            <p>Silver Pines, NY 55014</p>
+            <p>(202)555-0137</p>
+        </div>
+        <div class="main">
+            <br>
+            <table>
+                <tr>
+                    <td>Cashier: Emily</td>
+                    <td>11/29/2017</td>
+                </tr>                
+                <tr>
+                    <td></td>
+                    <td>7:05 PM</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td>Verloren: Writings on De...</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>89148755</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>(1 @ 12.98)</td>
+                    <td>12.98</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Sun Raven</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>79468147</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(1 @ 15.00)</td>
+                    <td>15.00</td>
+                </tr>
+            </table>
+            <br>
+            <table id="bottomborder">
+                <tr id="center">
+                    <td>Total Items: 2</td>
+                    <td>27.98</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td>Tax</td>
+                    <td>2.48</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>$30.46</td>
+                </tr>
+            </table>
+            
+            <br>
+            <table id="bottomborder">
+                <tr>
+                    <td>DEBIT CARD TENDER</td>
+                    <td>$30.46</td>
+                </tr>
+                <tr>
+                    <td>Acct: xxxxxxxxxxxx5489</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Chip Read</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Verified By Pin</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>US DEBIT</td>
+                    <td>PURCHASE</td>
+                </tr>
+            </table>
+            <br>
+            <p>Thank you for shopping at Raven Press!</p>
+            <p>www.ravenpress.com</p>
+        </div>
+    </div>
+    <footer>
+        <a href="../webdev_stuff.html" id="back"> &laquo; BACK</a>
+    </footer>
+</body>
+</html>

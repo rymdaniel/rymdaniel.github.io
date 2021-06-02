@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>SCS: About</title>
+    <link rel="icon" href="favicon.png">    
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Teko");
+            @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: black;
+                color: white;
+                text-shadow: 2px 2px 1px black;
+            }
+                        
+            #title, .header {
+                color: #4ecca3;
+                font-weight: 100;
+                margin: 20px 0;
+            }
+            
+            #mainContainer {
+                position: relative;
+                top: 30px;
+                margin-bottom: 50px;
+            }
+            
+            #title {
+                font-family: "Teko";
+                position: relative;
+                text-align: center;
+                font-size: 3em;
+                padding: 0px;
+                transform: scale(2, 1);
+                width: 30%;
+                margin: 0 auto;
+            }
+            
+            .header {
+                text-align: center;
+                font-weight: bold;
+                font-family: "Cutive Mono";
+            }
+            
+            .content {
+                position: relative;
+                text-align: justify;
+                margin: 0 auto;
+                font-size: 1.2em;
+                width: 50%;
+                font-family: "Cutive Mono";
+            }
+            
+            .subTitle {
+                position: relative;
+                margin: 0 auto;
+                font-family: "Cutive Mono";
+                width: 50%;
+                font-size: 1.2em;
+                text-align: justify;
+            }
+            
+            .first {
+                color: #4ecca3;
+            }
+            
+            #ALTRNET, #ESOUL {
+                position: relative;
+                margin: 0 auto;
+                font-size: 1.4em;
+                text-align: left !important;
+            }
+            
+            .terminal {
+                position: absolute;
+                margin: 20px;
+                image-rendering: pixelated;
+                z-index: -1;
+            }
+            
+            .left {
+                left: 60px;
+            }
+            
+            .right {
+                right: 60px;
+            }
+            
+            #tvLine {
+                position: fixed;
+                padding: 5px;
+                height: 2px;
+                box-shadow: 2px 2px 5px white;
+                width: 100%;
+                background-color: #4ecca3;
+                animation: 4s scan linear infinite;
+                opacity: 0.5;
+                z-index: 999;
+            }
+            
+            @keyframes scan {
+                0% {
+                    transform: translate(0px, 100vh);
+                }
+                
+                100% {
+                    transform: translate(0px, -200vh);
+                }
+            }
+            
+            @media screen and (max-width: 980px) {
+                .terminal {
+                    display: none;
+                }
+                
+                .subTitle {
+                    text-align: left !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <h1 id="title">SOUL CO. SYSTEMS</h1>
+            <p class="content">&emsp;Soul Co. Systems was founded with the hope that people could fulfill their dreams no matter the case. Do you suffer form a disability and have wished all your life to be an athlete? Do you just want to see what it's like to be someone else? The real world can pose many difficulties and force you to make compromises leading to mental strain and possible psychological repercussions. That's we decide to create ALTRNET and the iconic E-SOUL terminals</p>
+            <h2 class="header">ALTRNET (A.K.A The Alternate)</h2>
+            <p class="content">
+                &emsp;With the advancements in science in the recent years and the ability to fully map a human brain and its neurons we realized it was possible to upload the human consciousness to the digital realm as well as transmit signals directly to the brain in new ways. Because of this we decided it was time to create a network of digital consciousness to allow people to connect past the limits of screen and text.<br><br>That's when we created ALTRNET.<br><br>
+            </p>
+            <p class="subTitle">
+            <span id="ALTRNET">
+                <span class="first">A</span>gile 
+                <span class="first">L</span>arge-Scale 
+                <span class="first">T</span>rackable 
+                <span class="first">R</span>aw 
+                <span class="first">N</span>eural 
+                <span class="first">N</span>etworks via 
+                <span class="first">E</span>-Soul 
+                <span class="first">T</span>erminals
+            </span>
+            </p>
+            <p class="content">
+                <br><br>&emsp;Simply put we devised a way to be able to upload a copy of a person's neural network. We then permit the owner to manipulate the copy (or avatar) of themselves to do as they'd like. Think of it this way: whatever your mind does your copy does too, in real-time. This allows the user to manipulate an identicle version of themselves without the fear of causing irrevirsble harm in real life.
+            </p>
+            <h2 class="header">E-SOUL Terminals</h2>
+
+            <p class="content">&emsp;With the framework for a limitless sandbox in place we needed to be sure that the right technology was in charge of handling data exchange from and to the user. We knew the security worries that would arise given the power of this technology.<br><br>
+            Enter E-SOUL Terminals:<br><br>
+            </p>
+            <p class="subTitle">
+            <span id="ESOUL">
+                <span class="first">E</span>lectronic 
+                <span class="first">S</span>oul 
+                <span class="first">O</span>bfuscation 
+                <span class="first">U</span>ser 
+                <span class="first">L</span>ink Terminal
+            </span><br><br>
+            </p>
+            <img src="esoul-terminal.png" class="terminal left">
+            <img src="esoul-terminal-color.png" class="terminal right">
+            <p class="content">
+                &emsp;Obfuscation is a fancy word for making something hidden or in our case encrypted. This allows our transmissions to be infiltration-proof guaranteeing the user's safety every time they initiate a session. Essentially these little wonders of tech connect your consciousness to the Alternate and allow a contious flow of real-time nueronic data. Your SOUL copy stays saved and all your real memories are unaffected by any new memories created in The Alternate. You can create many SOUL copies and all it takes is a simple selection to choose the SOUL copy you wish to interact with.<br><br>&emsp;Lastly there is no worry when it comes to sharing E-SOUL terminals or with someone getting your log in info. When you connect to The Alternate you can only connect to your SOUL copy given that your nueronic map IS your encryption key!
+            </p>
+            
+        </div>
+        <div id="tvLine"></div>
+    </body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #191919;
+    position: relative;
+    overflow: hidden;
+    animation: fade 1.2s ease-in-out forwards;
+}
+
+main {
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 25vh 0 25vh;
+    color: white;
+}
+
+h1, h2 {
+    font-family: Spectral SC;
+}
+
+nav {
+    padding: 30px;
+}
+
+nav p {
+    font-size: 1.5em;
+}
+
+nav .linkbuttons a {
+    color: white;
+    font-size: 1.5em;
+    font-family: Cutive Mono;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 149px;
+    height: 50px;
+    line-height: 50px;  
+}
+
+nav a:hover {
+    background: seagreen;
+}
+
+aside {
+    float: right;
+    width: 50%;
+    position: relative;
+    height: 90vh;
+    padding: 5% 0;
+}
+
+aside img {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    margin: 50px auto 50px;
+    animation: drop 2s ease-out .5 forwards;
+    top: -100px;
+    z-index: -1;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+    height: 100%;
+    padding: 1.2% 0;
+}
+
+#playlist-text iframe {
+    width: 99%;
+    height: 45vh;
+}
+
+.youtube {
+    height: 45vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.linkbuttons {
+    width: 300px;
+    height: 50px;
+    display: inline-block;
+    background: #252525;
+    margin: 20px;
+}
+
+.firstlink {
+    border-right: 1px solid #191919;
+}
+
+.secondlink {
+    border-left: 1px solid #191919;
+}
+
+a .no-underline {
+    text-decoration: none;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes drop {
+    0% {transform: translateY(0px)}
+    100% {transform: translateY(100px)}
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        top: -75px;
+    }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1000px) and (min-device-width: 10px) and (max-device-width: 1000px){
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        main, aside, footer {
+            width: 100%;
+        }
+        
+        body {
+            overflow: auto;
+            width: 100%;
+        }
+        
+        main {
+            position: relative;
+            float: none;
+            margin: 0 auto;
+        }
+        
+        aside {
+            height: 0;
+            position: relative;
+            float: none;
+        }
+        
+        nav {
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            font-size: 1em;
+            padding: 20px;
+        }
+        
+        main {
+            top: 10px;
+        }
+        
+        nav p,
+        h1,
+        h2 {
+            text-shadow: 2px 2px 5px black;
+            width: 100%;
+            position: relative;
+        }
+        
+        h1, h2 {
+            font-size: 2em;
+        }
+        
+        aside img {
+            top: 10px;
+            max-width: 100%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            z-index: -10;
+            position: fixed;
+            opacity: 0.3
+        }
+        
+        footer {
+            position: relative;
+            margin: 0 auto;
+            font-size: 1em;
+        }
+        
+        footer p {
+            text-align: center;
+            font-size: 1em;
+        }
+        
+        .linkbuttons {
+            opacity: .8;
+            width: 90%;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }
+        
+        nav .linkbuttons a {
+            opacity: 1;
+            position: relative;
+            float: left;
+            width: 49%;
+            left: 0;
+            right: 0;
+        }
+        
+}

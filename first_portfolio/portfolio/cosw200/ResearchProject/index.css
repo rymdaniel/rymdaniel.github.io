@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta|Martel');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0px 20%;
+}
+
+.comment {
+    color: gray;
+}
+
+#vueLogo {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.center, h1, h2, h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Allerta";
+}
+
+h1, h2, h3, main p {
+    padding: 15px 0px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    border-top: 1px solid black;
+}
+
+.preview {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preview img {
+    width: 300px;
+}
+
+main {
+    display: block;
+    position: relative;
+    margin: 20px 0px;
+}
+
+main p {
+    font-family: "Martel";
+}
+
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px 20px;
+    column-count: 3;
+    background: seagreen;
+    font-family: "Martel";
+    font-size: 0.85em;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer p a, footer p {
+    color: white;
+}
+
+footer a:focus {
+    background: white;
+    color: black;
+}

@@ -1,0 +1,321 @@
+/*
+Backgrounds: #232931 (Dark Blue Gray)
+Box Elements & Menus: #393e46 (Blue Gray)
+Title/Headers: #4ecca3 (Blue/Green Turqoise)
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Kumar+One+Outline|Orbitron");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #232931;
+    /*background-image: url("https://78.media.tumblr.com/537d7cb64cdb9e2725d4d0a3562a820e/tumblr_myad1l4Uwh1r34zhyo5_500.gif");*/
+    /*background-image: url("https://cdn.dribbble.com/users/230034/screenshots/1319843/radiohalo-800.gif");*/
+    /*background-image: url("https://78.media.tumblr.com/f0a77ec73fd9feefdc64657a8b6f80ef/tumblr_nbvogcvEux1r51vveo1_400.gif");*/
+    background-image: url("https://cdn.dribbble.com/users/1655585/screenshots/3433111/glb_000_globe_loop2__3.gif");
+    image-rendering: pixelated;
+    background-size: cover;
+    background-position: fixed;
+    font-family: Montserrat;
+}
+
+#about {
+    display: none;
+    position: absolute;
+    color: white;
+    width: 340px;
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.85em;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Orbitron;
+    text-align: center;
+}
+
+#more {
+    color: white;
+    width: 188px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    font-family: Times New Roman;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#pressPlay {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    color: white;
+    font-size: 0.75em;
+    pointer-events: none;
+}
+
+#popOutButton p {
+    color: white;
+    cursor: pointer;
+    right: -155px;
+    top: 130px;
+}
+
+#registration {
+    background-color: #393e46;
+    position: relative;
+    display: none;
+    top: 100px;
+    width: 400px;
+    height: 655px;
+    margin: 0 auto;
+    color: #4ecca3;
+}
+
+#logo {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    padding-top: 35px;
+    filter: invert(1);
+}
+
+#registration input {
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+form p {
+    padding-bottom: 10px;
+}
+
+#bioContainer #bioText,
+form p input {
+    width: 360px;
+}
+
+#birthday {
+    width: auto;
+}
+
+#bioText {
+    resize: none;
+    height: 120px;
+    overflow-y: auto;
+}
+
+#bioCount {
+    text-align: right;
+}
+
+#submit,
+#changeAvatar,
+#changeBio,
+#confirmBio {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background: none;
+    padding: 5px;
+    border: 1px solid #4ecca3;
+    color: #4ecca3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#submit:hover,
+#changeAvatar:hover,
+#changeModal #confirm:hover,
+#changeModal #cancel:hover,
+#changeBio:hover,
+#confirmBio:hover {
+    background: white;
+    border: 1px solid white;
+    color: #232931;
+}
+
+.alert {
+    font-size: 0.95em;
+}
+
+#alertContainer p {
+    padding: 5px 20px;
+}
+
+#alertContainer {
+    width: 400px;
+    background: #393e46;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+#welcome {
+    position: relative;
+    display: none;
+    top: 50vh;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#profile {
+    position: relative;
+    display: none;
+    color: #4ecca3;
+    font-family: Kumar+One+Outline;
+}
+
+#profileBox {
+    position: relative;
+    display: block;
+    margin: 20px;
+    width: 350px;
+    height: 800px;
+    background: #232931;
+    float: left;
+}
+
+#name,
+h3 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#avatarContainer {
+    position: relative;
+    background: #393e46;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#avatarContainer p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#profileBio {
+    position: relative;
+    background: #393e46;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+#bio {
+    padding: 10px;
+    color: white;
+    font-size: 0.75em;
+}
+
+#avatar {
+    display: none;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#changeAvatar {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#chat {
+    position: relative;
+    float: right;
+    top: 20px;
+    width: 1200px;
+    max-width: 100%;
+    margin-right: 50px;
+    filter: hue-rotate(350deg);
+    opacity: 0.9;
+}
+
+#changeModal {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+    width: 400px;
+    height: 200px;
+    background: #393e46;
+    color: #4ecca3;
+    text-align: center;
+}
+
+#changeModal input {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    background: none;
+    padding: 5px;
+    border: 1px solid #4ecca3;
+    color: #4ecca3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#avatarButtons {
+    display: block;
+    text-align: center;
+}
+
+#passCheck {
+    padding: 10px 0;
+}
+
+#avatarButtons #confirm,
+#avatarButtons #cancel {
+    display: inline-block;
+
+}
+
+#changeModal #avatarLink {
+    width: 80%;
+}
+
+#confirmBio {
+    display: none;
+}
+
+#bioButtons {
+    display: block;
+    text-align: center;
+}
+
+#bioButtons #changeBio {
+    text-align: center;
+}
+
+#linkAlert {
+    position: relative;
+    top: 30px;
+    color: white;
+}

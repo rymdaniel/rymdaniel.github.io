@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Story Intro</title>
+    <meta name="description" content="Story, Map, and Cliffhanger">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/story.css">
+</head>
+<body>
+    <main>
+        <div id="edgeFade"></div>
+        <div id="storyContainer">
+            <div id="textContainer">
+                <p><br><br><br><br></p> <!--The span classes are sent through a for loop to all be filled in with corresponding text. Fast way of filling every span with the name the user inputs.-->
+                <p class="action"> You place your backpack on the counter and make your way to the submergment bed.</p>
+                <p><span class="drMitchell"></span><span class="firstName"></span>? Are you ready to <i>sink</i>?</p>
+                <p><span class="player firstName"></span><span class="speaker">: </span>Yeah. Start the connection.</p>
+                <p><span class="drMitchell"></span>I'm going to pull up a map of where you're going today.</p>
+                <img class="centered" src="media/locations/map.png">
+                <p><span class="drMitchell"></span>We're starting you off somewhere between Ossuary and Helotry. That's the most promising locale from what we were able to extract from Ms. Kennedy &mdash; I mean Ms. Smith. I forget you don't like to know the patient's name.</p>
+                <p><span class="player firstName"></span><span class="speaker">: </span>Just let me know where <i>completion</i> occurs.</p>
+                <p><span class="drMitchell"></span>At Vanity. Pulling up the malignant data carriers for you.</p>
+                <div id="kingsAndQueens">
+                    <div class="imgContainer">
+                        <img src="media/characters/agatha/agatha.png">
+                        <p>Agatha</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/devin/devin.png">
+                        <p>Devin</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/maxwell/maxwell.png">
+                        <p>Maxwell</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/mildred/mildred.png">
+                        <p>Mildred</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/porter/porter.png">
+                        <p>Porter</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/sabrina/sabrina.png">
+                        <p>Sabrina</p>
+                    </div>
+                </div>
+                <p><span class="player firstName"></span><span class="speaker">: </span>Kings and Queens again, Mitchell? And Sabrina?! You have to stop injecting real life information because it complicates extraction! I thought you and Sabrina were done.</p>
+                <p><span class="drMitchell"></span>Were... Let me pull up some additional data carriers that might be able to aid you.</p>
+                <div id="sideCharacters">
+                    <div class="imgContainer">
+                        <img src="media/characters/mirjana/mirjana.png">
+                        <p>Mirjana</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/nadja/nadja.png">
+                        <p>Nadja</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/ruslan/ruslan.png">
+                        <p>Ruslan</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/vallen/Vallen.png">
+                        <p>Vallen</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/morgan/morgan.png">
+                        <p>Morgan</p>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="media/characters/stas/stas.png">
+                        <p>Stas</p>
+                    </div>
+                </div>
+                <p><span class="drMitchell"></span>Mirjana is in charge of Ossuary, Nadja, a bar owner with suspicious data, in Helotry, Ruslan a laborer in Miasma, Vallen a street criminal in Antimony, and Morgan and Stas in Haulm.</p>
+                <p><span class="player firstName"></span><span class="speaker">: </span>Let's do this quick before anyone finds out about this.</p>
+                <p><span class="drMitchell"></span>Ok. You two are connected. Submerging you now.</p>
+                <p class="action"> The door slams open.</p>
+                <p><span class="speaker">???: </span>What do you two think you are doing!?</p>
+                <p><span class="drMitchell"></span>Officer Cross! Please calm down and lower your voice!</p>
+                <p><span class="speaker">Officer Cross: </span>Do you two have clearance for this patient? Is that &mdash; Ms. Kennedy!</p>
+                <p><span class="drMitchell"></span>We have reason to believe Mr. Holland is stealing valuable Siphon information and we're trying to see if Ms. Kennedy knows anything.</p>
+                <p><span class="speaker">Officer Cross: </span>Why in god's name would the CEOs wife know anything about this?</p>
+                <p class="action"> Mitchell tosses Officer Cross Ms. Keneddy's cellphone.</p>
+                <p><span class="drMitchell"></span>Read their texts.</p>
+                <p><span class="speaker">Officer Cross: </span>They were having an affair!?</p>
+                <p><span class="drMitchell"></span>Keep your voice down! Now shut and lock that door behind you!</p>
+                <p><span class="speaker">Officer Cross: </span> This is insane. How long are you submerging?</p>
+                <p><span class="drMitchell"></span>Who knows. Fifteen to thirty minutes at the most. Don't want to get <span class="firstName"></span> stuck in there...<br><br><br><br><br><br><br><br><br><br><br><br></p>
+            </div>
+        </div>
+    </main>
+    <div id="buttonContainer">
+        <button title="RETURN TO CHARACTER CREATE" type="button" name="back" class="pageButton" id="confirmBack" onclick="location.href = 'character.html'">BACK</button>
+                <button title="TO EXTRAS PAGE" type="button" name="next" class="pageButton" id="beginStory" onclick="location.href =  'extras.html'">END INTRO</button>
+    </div>
+    <script type="text/jscript" src="scripts/story.js"></script>
+</body>
+</html>

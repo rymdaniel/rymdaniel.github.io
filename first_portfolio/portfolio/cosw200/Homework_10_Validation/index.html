@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soul Co. Systems</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="about">
+        <p>Welcome to Soul Co. Systems. Join the trillions that have have opted for consciousness upload through E-SOUL terminals.<br><br>Live in The Alternate (ALTRNET) where you can erase, create, or change anything.<br><br></p>
+        <a href="#" target="_blank" id="more">What are E-SOUL and ALTRNET?</a>
+    </div>
+    
+    <div id="registration">
+        <img src="https://s7.postimg.cc/a3sw2r8ob/scs2.png" id="logo">
+        <!--https://postimg.cc/image/iipino8zr/98b22366/
+https://postimg.cc/image/4sdzi1mlj/dbc930da/-->
+        <form>
+            <p>E-mail<br><input type="email" name="email" id="email" required autofocus></p>
+            <p>Username<br><input type="text" name="username" placeholder="*minimum 8 characters" id="username" required></p>
+            <p>Password<br><input type="password" name="passwordOne" placeholder="*minimum 7 characters" id="passwordOne" required></p>
+            <p>Re-type Password<br><input type="password" name="passwordTwo" id="passwordTwo" required></p>
+            <div id="passCheck">Show Pass&emsp;<input type="checkbox" name="showPass" id="showPass"></div>
+            <p>Date of Birth<br><input type="date" name="birthday" id="birthday" required></p>
+            <p id="bioContainer">Bio<br><textarea name="message" id="bioText" maxlength="300"></textarea></p>
+            <p id="bioCount"><span id="count">0</span>/300</p>
+            <input type="submit" value="Register" id="submit">
+        </form>
+        <div id="alertContainer">
+            <p id="usernameAlert" class="alert"></p>
+            <p id="passwordLength" class="alert"></p>
+            <p id="passwordMatch" class="alert"></p>
+        </div>
+        <p id="pressPlay">Press play for the full aesthetic experience.</p>
+    </div>
+    <h1 id="welcome"></h1>
+    <div id="profile">
+        <div id="profileBox">
+            <h2 id="name"></h2>
+            <div id="avatarContainer">
+                <img src="" id="avatar">
+                <p>AVATAR PENDING</p>
+            </div>
+            <button type="button" id="changeAvatar">Change Avatar</button>
+            <h3>Bio</h3>
+            <div id="profileBio">
+                <p id="bio"></p>
+            </div>
+            <div id="bioButtons">
+                <button type="button" id="changeBio">Change Bio</button>
+                <button type="button" id="confirmBio">Confirm Bio</button>
+            </div>
+            <p id="linkAlert">Could not find SOUL LINK CONNECTION!<br>Please PLUG-IN NOW!</p>
+        </div>
+        <img src="https://inconsolation.files.wordpress.com/2013/05/2013-05-09-solo-2150-irssi.gif" id="chat">
+        <div id="changeModal">
+            <h3>AVATAR CHANGE</h3>
+            <input type="text" name="avatarlink" id="avatarLink" autofocus>
+            <p>Please enter a link for the picture you want to display.</p>
+            <div id="avatarButtons">
+                <input type="submit" value="Confirm" id="confirm">
+                <input type="button" value="Cancel" id="cancel">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+    <!-- SCM Music Player http://scmplayer.co -->
+    <script type="text/javascript" src="https://scmplayer.co/script.js" data-config="{'skin':'https://rymdaniel.github.io/first_portfolio/portfolio/cosw200/Homework_10_Validation/scmplayer.css','volume':10,'autoplay':false,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Addex - Sliding Ice (Original Mix)','url':'https://www.youtube.com/watch?v=-qkgoAWXQPM'},{'title':'D.M.P. - Just Believe (Alvaro Hylander Remix)','url':'https://www.youtube.com/watch?v=C5BM4knG7ws'},{'title':'The Messenger - Midnite Hour','url':'https://www.youtube.com/watch?v=xEo4aSlVt-c'},{'title':'Detleft - Pump Up (Original Mix)','url':'https://www.youtube.com/watch?v=Q8D8occsDb4'},{'title':'Detleft - Oh Oh','url':'https://www.youtube.com/watch?v=a5ejWoC0gjQ'},{'title':'Santiago Naura - Wicked Little Things (Novakk Remix)','url':'https://www.youtube.com/watch?v=6_-aQXMiFjY'},{'title':'Paul C & Paolo Martini - Bermuda','url':'https://www.youtube.com/watch?v=PzkkW3FnI9o'},{'title':'Lars Leonhard - Lie to Me (Martin Nonstatic Remix)','url':'https://www.youtube.com/watch?v=esc5Smkg5g8'},{'title':'Kled Baken - Cordillera (Original Mix)','url':'https://www.youtube.com/watch?v=k6B7zUMKidY'},{'title':'PleasureKraft - Anubis','url':'https://www.youtube.com/watch?v=q-ojMPtT4p8'},{'title':'Danny Howells - The Shining','url':'https://www.youtube.com/watch?v=fatq0l7hjWg'},{'title':'Sleek & Cheek - Go Home (Original Mix)','url':'https://www.youtube.com/watch?v=s-BSjC5NFoU'}]}"></script>
+    <!-- SCM Music Player script end -->
+    <script type="text/javascript" src="functionality.js">
+    </script>
+</body>
+</html>

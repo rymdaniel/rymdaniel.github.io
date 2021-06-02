@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Vue.js Research Project</title>
+        <meta name="description" content="Here you can find a general introduction to what Vue.js is all about.">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <img src="https://vuejs.org/images/logo.png" id="vueLogo">
+            <h1>Vue.js: An Introduction</h1>
+            <h2>Why was Vue.js created? <span class="comment">//PURPOSE</span></h2>
+            <p>&emsp;Vue.js is a Javascript framework created by <a href="https://www.linkedin.com/in/evanyou/">Evan You</a>, a past developer at Google. He used to work a lot with <a href="https://angularjs.org/">Angular</a> and figured he could just extract the really cool parts of it and make something far more lightweight without all the extra concepts. He said he was curious to see how Angular worked internal as well so he began Vue as an experiment and it slowly became Vue.js. he finished it in 2013 but it wasn't until 2014 when he publicly released it as an actual project.<a href="#cite_5" class="link"><sup>[5]</sup></a></p>
+            <h3>So what does it do?</h3>
+            <p>&emsp;Vue.js allows one to create dynamic high-performance applications similar to react, but thanks to a virtual DOM it offers higher performance which is beneficial for complex apps. Essentially what Vue.js does is allows the content on a page to change quickly without having to reload the page.</p>
+            <h3>Why use Vue.js versus other libraries and frameworks?</h3>
+            <p>&emsp;Vue.js calls itself a progressive framework used for building user interfaces. It focuses on the view layer only but is powerful enough to power sophisticated single-page applications.<br><br>&emsp;Although it is similar to React with data binding and components, it focuses on approachability. This means that it makes sure that people who know the basics like HTML, CSS, and Javascript, can pick it up rather quickly. By being "lean" and having a "minimal core" it maintains flexibility as opposed to Ember or Angular who try to be opinionated on all the problems you may run into.<a href="#cite_5" class="link"><sup>[5]</sup></a> What this means is by being opinionated they force you to comply to a standard when different situations arise by guessing about the things you may run into. This forces you to be less flexible in your work.<br><br>&emsp;Vue takes a middle ground according to <a href="https://www.linkedin.com/in/evanyou/">Evan You</a>, by being minimal but still offering more complex things like routing and state management solutions. Another benefit is the optimization. Where a state change in React re-renders the entire component and child components, Vue keeps track of which components actually need to re-render, affecting only those.<br><br><span class="center">Here is a link to an interview with Evan You:<br><a href="https://medium.freecodecamp.org/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4">"Between the Wires: An Interview with Vue.js Creator, Evan You"</a></span></p>
+            
+            <h2>How does Vue.js work? <span class="comment">//WHAT I LEARNED</span></h2>
+            <p>&emsp;To use Vue.js you can either use CDN by including it in the <code>&lt;span&gt;</code> tags within your HTML file. You can also install it by using Node Package Manager, installing Bower, or using the Vue CLI (Command Line Interface). You can think of Vue CLI like GIT if you are familiar with it. If you are using the Vue-CLI then your system needs to have Node.js and the npm command must be available on your system too.<a href="#cite_6" class="link"><sup>[6]</sup></a><br><br>&emsp;The default HTML starts with a <code>&lt;div&gt;</code> with <code>ID</code> of <code>"app"</code> where all the content will be injected. A Javascript file called main.js initializes Vue by importing it and creating a new Vue instance. It takes an object as a parameter with three properties. <code>EL</code>: selects <code>#app</code> as the element where we will render everything into. <code>TEMPLATE</code>: Contains the HTML code used to generate output. <code>COMPONENTS</code>: Is the List of Vue.js components used in the template. The beauty of Vue.js is that it links the DOM and Script making them reactive (i.e. dynamic).<br><br>&emsp;Directives are prefixed with <code>v-</code> to indicate that they are special attributes provided by Vue. The following is an example of what using <code>v-</code> would be like.<a href="#cite_3" class="link"><sup>[3]</sup></a></p>
+            <div id="codeSample">
+                <h3>HTML</h3>
+                <pre>
+                    <code>
+                        &lt;div id="app"&gt;
+                            &lt;span v-bind:title="message"&gt;
+                                Hover over this to see something!
+                            &lt;/span&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+                <h3>JAVASCRIPT</h3>
+                <pre>
+                    <code>
+                        var app = new Vue ({
+                            el: "#app",
+                            data: {
+                                message: "You loaded this page on" + new Date().toLocaleString()
+                            }
+                        })
+                    </code>
+                </pre>
+            </div>
+            <h3>So what is this doing?</h3>
+            <p>&emsp;<code>v-bind:title</code> is attaching the data's message as that span's title. When a user hovers over it it displays the date generated on DOM load. One of the benefits of Vue is that you don't have to do DOM manipulation yourself; they are handled by Vue.js. You can then also make a component accept a prop which is somewhat like an <code>ID</code> to make sure that only a specific component is updated and not every component that may share the same name.</p>
+            
+            <h2>What Vue.js communities are out there? <span class="comment">//SUPPORT</span></h2>
+            <p>&emsp;I can't help but feel that there should be at least several communities for Vue.js but all I managed to find is Vue's forum itself. It seems to be the best place to start if you wish to find information and solutions about Vue.js. Not only that but it provides support for multiple languages!<br><br><span class="center">Here is a link to the forum: <br><a href="https://forum.vuejs.org/" target="_blank">Official Vue.js Forum</a></span></p>
+            
+            <h3>What are some sites that use Vue.js?</h3>
+            <p>&emsp;Several popular Chinese sites like <a href="https://www.alibaba.com/" target="_blank">Alibaba</a>, <a href="https://www.mi.com/en/" target="_blank">Xiaomi</a>, <a href="https://www.baidu.com/" target="_blank">Baidu</a>, and <a href="https://www.tencent.com/en-us/" target="_blank">Tencent</a> use Vue.js a central front-end technology.<br><br></p>
+            <h2>Other examples that hit my soft spot</h2>
+                <div class="preview">
+                    <a href="https://project-helios.ca/#/" target="_blank">
+                        <img src="projectHelios.png" class="previewImage">
+                    </a>
+                    <div class="previewTitle">
+                        <a href="https://project-helios.ca?#/" target="_blank">Project Helios</a>
+                    </div>
+                </div>
+            <p>&emsp;I have a soft spot for the vapor the Vaporwave aesthetic and anything cyberpunk so this was a nice little find. Upon source file inspection, the <code>webpack/static/js</code> folder contains an <code>app.js</code> file with a Vue.js components and one for the glitch text that appears on the top left of the page. There is also a component for the music player which includes the progress bar, volume, and play/skip buttons.<br><br>&emsp;The things I like about the page are the simplicity and design choice but I can't help but feel I was expecting more. There is more to vaporwave than just the music at this point. There is <a href="https://www.google.com/search?q=vaporwave&rlz=1C1GCEA_enUS773US773&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjL7K2jw6vbAhW9JDQIHSxoAeMQ_AUICigB&biw=1280&bih=918" target="_blank">imagery</a> and <a href="https://en.wikipedia.org/wiki/Abandonware" target="_blank">abandonware</a> that could fill the page with much more content for those wanting to look deeper into vaporwave. I get that the idea is to give people and introduction to vaporwave but it fells like nothing more than an excuse for the creator to possible share their favorite vaporwave racks to other people in a visual way (but who doesn't?). Don't get me wrong, it all fits together nicely, but I believe there should be more content aside from the text converter and the news letter.</p>
+            <div class="preview">
+                    <a href="https://hnews.xyz/top" target="_blank">
+                        <img src="hackerNewsClone.png" class="previewImage">
+                    </a>
+                    <div class="previewTitle">
+                        <a href="https://hnews.xyz/top" target="_blank">Hacker News Clone</a>
+                    </div>
+                </div>
+            <p>&emsp;I finally decided to check out what Hacker News was a few days ago and plan on visiting it frequently to keep up with the latest tech news. I then happened to find this hacker news clone made with Vue. It loads fake articles, simulating real-time posting without reloading the page, so I know Vue and all the other back-end stuff is working. Looking at the source code you can see data, computed, props, and mounted properties which are all part of Vue.js and how it implements things onto the page.<br><br>&emsp;The only thing I dislike about it is the fact that although it's decided to show an image preview of the article, which may be good in some cases to get an idea what the article is about, they aren't anything more than screenshots of the article itself. If the header is interesting enough then chances are a viewer will check it out, regardless if it has an image or not. The idea of a preview is to support the title but a screenshot of the article itself does nothing other than take up space on the page when it could simply be a list view like hackernews already does.
+            <br>&emsp;<span class="center">(And yes, I'm totally aware I'm doing exactly what I'm critiquing).</span><br></p>
+            <h2>Final thoughts... <span class="comment">//CONCLUSION</span></h2>
+            <h3>Overall impression</h3>
+            <p>&emsp;Without knowing too much about Vue.js it's clear that its very powerful and fast as its creator, <a href="https://www.linkedin.com/in/evanyou/">Evan You</a>, intended. Given the industry today I feel it's necessary to either learn Angular, React, and maybe even both with focus on one of them. But with the power that Vue.js has it seems the only reason it doesn't pick up or have as much market share as Angular and React do is due to a lack of an established corporate sponsor. I plan on learning it not only because its well made and faster at times than the other two most popular frameworks, but because it seems to be the best entry level framework for those who have HTML, CSS, and JS knowledge already compared to the learning curve of Angular for example.</p>
+            <h3>Are there benefits to learning all this?</h3>
+            <p>&emsp;It's a really good tool to make your page reactive and fast without having to worry too much about coding everything by hand and leaving some the heavy lifting to the framework. Although it is a good thing to know how to do something in vanilla JS and not depend too much on someone or something else to do things for you, once you learn those things on your own it seems reasonable to move onto libraries and frameworks.<br><br>&emsp;Why? Because now that you know things work manually, you can better grasp how to do things with these tools at hand make your coding experience more efficient and clean.</p>
+        </main>
+        <footer>
+            <p>1. "<a href="https://vuejs.org/" target="_blank" id="cite_1">vuejs.org</a>"<br></p>
+            <p>2. "<a href="https://medium.mybridge.co/30-amazing-vue-js-open-source-projects-for-the-past-year-v-2018-d39a0d019bb7" target="_blank" id="cite_2">30 Amazing Vue.js Open Source Projects For The Past Year (v.2018)</a>"<br></p>
+            <p>3. "<a href="https://vuejs.org/v2/guide/" target="_blank" id="cite_3">Vue.js Guide</a>"<br></p>
+            <p>4. "<a href="https://vuejs.org/v2/cookbook/index.html" target="_blank" id="cite_4">Vue.js Cookbook</a>"<br></p>
+            <p>5. "<a href="https://medium.freecodecamp.org/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4" target="_blank" id="cite_5">Between The Wires: An Interview With Vue.js Creator, Evan You</a>"<br></p>
+            <p>6. "<a href="https://medium.com/codingthesmartway-com-blog/vue-js-2-quickstart-tutorial-2017-246195cfbdd2" target="_blank" id="cite_6">Vue.js 2 Quickstart Tutorial (2017)</a>"<br></p>
+            <p>7. "<a href="https://github.com/vuejs/awesome-vue#tutorials" target="_blank" id="cite_7">Github: Awesome Vue Tutorials</a>"<br></p>
+            <p>8. "<a href="https://forum.vuejs.org/" target="_blank" id="cite_8">vuejs.org Forums</a>"<br></p>
+            <p>9. "<a href="https://vuejs.org/v2/examples/index.html" target="_blank" id="cite_9">Vue.js Examples</a>"<br></p>
+            <p>10. "<a href="https://project-helios.ca" target="_blank" id="cite_10">Project Helios</a>"<br></p>
+            <p>11. "<a href="https://hnews.xyz" target="_blank" id="cite_11">Hacker News Clone</a>"</p>
+        </footer>
+    </body>
+</html>
+

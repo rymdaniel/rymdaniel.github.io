@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="widt=device-width, initial-scale=1">
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main_rwd.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="stylesheet" href="../styles/summary.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+<body>
+
+  <header>
+  	<img src="../images/pumpkin.gif" alt="Pumpkin">
+   	<h2>The Halloween Store</h2>
+   	<h3>For the little Goblin in all of us!</h3>
+  </header>
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="index.html" class="current">Product List</a></li>
+    	<li><a href="../personal/index.html">Personal</a></li>
+    	<li><a href="../decorating/index.html">Decorating Ideas</a>
+    		<ul>
+    			<li><a href="../decorating/outdoor.html">Outdoor</a></li>
+    			<li><a href="../decorating/indoor.html">Indoor</a></li>
+    			<li><a href="../decorating/table.html">Table</a></li>
+    			<li><a href="../decorating/treats.html">Treats</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="../email.html">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+	<section>
+        <h2>Product List</h2>
+        <table class="tablelinks">
+            <tr id="tablehead">
+                <th>Category</th>
+                <th>Description</th>
+                <th class="right">Price</th>
+            </tr>
+            <tr>
+                <th>Props</th>
+                <td><a href="cat.html">20" Deranged Cat</a></td>
+                <td>$39.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Flying Bats</a></td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">16" Ugly rat</a></td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">20" Uglier rat</a></td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Plastic Skeleton</a></td>
+                <td>$12.50</td>
+            </tr>
+            <tr>
+                <th>Costumes</th>
+                <td><a href="">Austin Powers</a></td>
+                <td>$79.50</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Frankestein</a></td>
+                <td>$49.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Martian</a></td>
+                <td>$69.99</td>
+            </tr>
+            <tr>
+                <th>Special Effects</th>
+                <td><a href="">Fog machine</a></td>
+                <td>$34.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Fog juice</a></td>
+                <td>$9.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Mini strobe light</a></td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <th>Masks</th>
+                <td><a href="">Freddy</a></td>
+                <td>$44.50</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="">Darth Vader</a></td>
+                <td>$124.50</td>
+            </tr>            
+        </table>    	
+    </section>
+	<aside>
+		<nav id="nav_list">
+   		<ul>
+   			<li><a href="products/props.html">Props</a></li>
+   			<li><a href="products/costumes.html">Costumes</a></li>
+   			<li><a href="products/special.html">Special FX</a></li>
+   			<li><a href="products/masks.html">Masks</a></li>
+		</ul>
+		</nav>
+	</aside>
+  </main>
+
+  <footer>
+	<p>&copy; 2016 Ben Murach</p>
+  </footer>
+</body>
+</html>

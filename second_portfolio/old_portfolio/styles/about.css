@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+a {
+    text-transform: uppercase;
+    list-style-type: none !important;
+    text-decoration: none;
+    font-family: VT323;
+    font-size: 25px;
+    /*color: #ff66cc;*/
+    color: white;
+    padding: 2px 17px;
+}
+
+main ul li {
+    text-align: left;
+    margin-left: 15px;
+}
+
+#back, #top {
+    list-style-type: none;
+    padding-top: 30px;
+    text-align: center;
+}
+
+a:hover,
+a:focus {
+    box-shadow: 1px 1px 3px white, -1px -1px 3px white;
+    background: white;
+    color: black;
+    text-shadow: none;
+    text-shadow: none;
+}
+
+.main {
+    padding: 50px;
+    top: -50px;
+    position: absolute;
+    text-align: left;
+    margin: 50px auto 0px;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 1;
+    text-shadow: 5px 0 5px rgba(251, 0, 231, 0.35), 0 5px 5px rgba(0, 233, 235, 0.35), -5px 0 1px rgba(0, 242, 14, 0.5), 0 -5px 5px rgba(244, 45, 0, 0.35), 5px 0 5px rgba(59, 0, 226, 0.35);
+    animation: flicker2 0.1s infinite;
+    font-family: Cutive Mono;
+    font-size: 1.1em;
+}
+
+h2,
+p {
+    padding: 10px 10px 10px 0;;
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(45px + 2vw);
+    pointer-events: none;
+    font-family: Dhurjati;
+    line-height: 1em;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-style: italic;
+    font-family: Dhurjati;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.textLink {
+    font-family: Cutive Mono;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.social {
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-shadow: 5px 0 5px rgba(251, 0, 231, 0.35), 0 5px 5px rgba(0, 233, 235, 0.35), -5px 0 1px rgba(0, 242, 14, 0.5), 0 -5px 5px rgba(244, 45, 0, 0.35), 5px 0 5px rgba(59, 0, 226, 0.35);
+    animation: flicker2 0.1s infinite;
+}
+
+#hidden {
+    opacity: 0.05;
+}
+
+.divider {
+    position: relative;
+    margin: 15px auto 5px;
+    width: 100%;
+    border-top: 2px solid rgba(20,100,159,0.50);
+    clear: both;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(15, 104, 138);
+    font-family: VT323;
+}
+
+.navbar a {
+    float: left;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 120px;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.3em;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: VT323;
+    text-transform: uppercase;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+.dropbtn:hover {
+    width: 120px;
+    padding: 14px 16px;
+}
+
+.dropdown:hover .dropbtn{
+    width: 120px;
+    text-align: left
+}
+
+.dropbtn {
+    cursor: pointer;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(15, 104, 138);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropbtn i {
+    font-style: normal;
+    position: fixed;
+    top: 7px;
+    left: 205px;
+    font-size: 1.3em;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo-container a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: .25em;
+}
+
+.current {
+    background: rgba(119, 226, 238,0.5);
+    color: white;
+}
+
+.current:hover {
+    background: white;
+    color: black;
+}
+
+#topbar {
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+}
+
+#about p {
+    font-size: 1.4em;
+    margin: auto 0;
+}
+
+#about {
+    width: 100%;
+}
+
+#avatar {
+    margin: 15px 50px 15px 0px;
+    min-width: 150px;
+    max-width: 200px;
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+@media screen and (max-width: 400px) {
+	.logo-container {
+	display: none;
+	}
+	
+	.dropbtn .down-arrow {
+	left: 145px;
+	}
+	
+	.navbar a {
+	padding: 14px 10px;	
+    }
+}
+
+@media print {
+    a {
+        color: black;    
+    }
+    
+    .main {
+        color: black;
+    }
+}

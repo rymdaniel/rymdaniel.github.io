@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<link href="../../../../media/icons/ghost.png" type="image/png" rel="icon">
+        <title>Lab 14: Videos and CSS Printing</title>
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background: black;
+            }
+            
+            h1 {
+                font-family: Cutive Mono;
+                font-size: 1.2em;
+                color: white;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px 0 10px 0;
+            }
+            
+            iframe {
+                width: 560px;
+                height: 315px;
+            }
+            
+            .container {
+                position: relative;
+                margin: 50px;
+                width: 100%;
+                float: left;
+            }
+            
+            .vidcontainer {
+                position: relative;
+                width: 600px;
+                margin: 0 auto;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>OMORI Trailer #1 (2014)</h1>
+            <div class="vidcontainer">
+                <iframe  src="https://www.youtube.com/embed/erzgjfU271g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h1>OMORI Trailer #2 (2017)</h1>
+            <div class="vidcontainer">
+                <iframe src="https://www.youtube.com/embed/nV0BST2nifk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h1>Hylics Trailer #1 (2015)</h1>
+            <div class="vidcontainer">
+                <iframe src="https://www.youtube.com/embed/TgNUgeEryCM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </body>
+</html>

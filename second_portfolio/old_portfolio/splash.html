@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/flicker.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @font-face {
+            src: url("media/monaco.ttf");
+            font-family: Monaco;
+        }
+        
+        body {
+            width: 100%;
+            font-family: monaco;
+            background: black;
+            height: 100%;
+            animation: flicker2 0.1s infinite;
+        }
+
+        #typedtext {
+            color: white;
+            font-family: monaco;
+            padding: 10px 0 0 10px;
+        }
+        
+        #typedtext:after {
+            content: "_";
+            animation: blink 1s step-end infinite;
+        }
+        
+        @keyframes blink {
+            from, to {
+                color: transparent; }
+            50% {
+                color: white;
+            }
+        }
+                
+        #aqua {
+            color: aqua;
+        }
+        
+        #white {
+            color: white;
+        }
+        
+        .skip-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: black;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid white;
+            animation: load 1s linear 2.5s forwards;
+            opacity: 0;
+            text-shadow: 1px 1px 3px white;
+            box-shadow: 1px 1px 3px white;
+        }
+        
+        .skip-button a {
+            color: white;
+            font-style: italic;
+            font-size: 1.2em;
+            display: block;
+            padding: 7px 10px;
+            display: block;
+        }
+        
+        .skip-button a:hover {
+            background: white;
+            border-radius: 10px;
+            color: black;
+        }
+        
+        #runner {
+            width: 100px;
+            position: absolute;
+            bottom: 60px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            animation: popin .4s ease .05s forwards;
+            z-index: -1;
+        }
+        
+        .skip-button:hover > #runner {
+            animation: popup .4s ease .05s forwards;
+            bottom: 10px;
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        @keyframes load {
+            0%{opacity: 0;}
+            2%{opacity: 1;}
+            4%{opacity: 0;}
+            6%{opacity: 1;}
+            8%{opacity: 0;}
+            10%{opacity: 1;}
+            20%{opacity: 0;}
+            30%{opacity: 1;}
+            35%{opacity: 0;}
+            40%{opacity: 1;}
+            70%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        
+        @keyframes popup {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(-50px);
+            }
+        }
+        
+        @keyframes popin {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="crt"></div>
+    <div class="pixelgrid"></div>
+    <div id="typedtext"></div>
+    <div class="skip-button"><img src="media/tvhead3.gif" id="runner"><a href="home.html">SKIP TO HOME PAGE</a></div>
+    <script> 
+    //The following typewriter script is credited to gavra at https://codepen.io/gavra/pen/tEpzn
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+    "<span id='aqua'>********** ARCADE-OS(R) V.1.0.0.0 **********</span><br>",
+    "<span id='white'>COPYRIGHT (C) 2017, DANIEL PALACIOS</span><br>",
+    "STARTING...<br>",
+    "REGION UNKNOWN",
+    "SERIAL NO. AAER-01A05774566",
+    "LOADER V1.0",
+    "EXEC VERSION 41.10",
+    "64G RAM SYSTEM",
+    "49.5 TERABYTES FREE",
+    "NO PREVIOUS INSTANCES FOUND",
+    "LOADING GUEST-ACCT:",
+    "&emsp;&emsp;ASSIGNED TO GUEST(001)<br>",
+    "READING...<br>",
+    "<span id='aqua'>SEC.9422021639xY<span>",
+    "<span id='aqua'>SEC.4505197655xH<span>",
+    "<span id='aqua'>SEC.2775251219xL<span>",
+    "<span id='aqua'>SEC.5962640312xK<span>",
+    "<span id='aqua'>SEC.6341168323xE<span>",
+    "<span id='aqua'>SEC.4631090763xR<span>",
+    "<span id='aqua'>SEC.8428769612xR<span>",
+    "<span id='aqua'>SEC.5076260567xW<span>",
+    "<span id='aqua'>SEC.8292544350xU<span>",
+    "<span id='aqua'>SEC.1766956574xN<span><br>",
+    "<span id='white'>SECTORS RETURNED NO ERRORS</span><br>",
+    "<span id='white'>ACCESS GRANTED TO PORTFOLIO PORTAL<br>",
+    "<span id='white'>REDIRECTING TO HOME PAGE...</span>"
+    );
+    var iSpeed = 1; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 40; // start scrolling up at this many lines
+
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+
+     while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+     }
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+     if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout("typewriter()", 150);
+      }
+     } else {
+      setTimeout("typewriter()", iSpeed);
+     }
+    }
+    typewriter();
+    </script>
+    <script>
+        setTimeout(function(){
+            window.location.href='home.html'},12000);
+    </script>
+    <!--<div id="typewriter">
+        <p>********** ARCADE-OS(R) V.1.0.0.0 **********</p>
+        <p>COPYRIGHT 2017 PALACIOS</p>
+        <p>LOADER V1.1</p>
+        <p>EXEC VERSION 41.10</p>
+        <p>64G RAM SYSTEM</p>
+        <p>49.5 TERABYTES FREE</p>
+        <p>NO PRE-ID FOUND</p>
+        <p>LOAD GUEST-ACCT (1): GUEST 001</p>
+    </div>-->
+</body>
+</html>

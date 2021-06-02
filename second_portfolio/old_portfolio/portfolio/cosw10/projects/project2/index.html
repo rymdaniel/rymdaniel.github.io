@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Palacios">
+    <title>Berlin: Then &amp; Now</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="A short history on Berlin and how it's changed since WWII.">
+    <meta name="keywords" content="Berlin, City, WWII, Nazi, Era, Germany, World War, Deutschland, Deutsch, History, Visit, Landmark, Landmarks, Museum, Museums, Vacation">
+    <link rel="stylesheet" href="promptstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cutive+Mono|Germania+One|New+Rocker|Pirata+One|Special+Elite" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="box1">
+            <p id="prompt">Warning!<br>This site contains content which may be offensive to some viewers.</p>
+        </div>
+        <div id="button">
+            <p onclick="prompt()">
+                <a href="#">NEXT <span id="blinker">>></span>
+                </a>
+            </p>
+        </div>
+        <div id="button2">
+            <p>
+                <a href="./home/modern.html">ENTER <span id="blinker">>></span>
+                </a>
+            </p>
+        </div>
+        <script>
+            function prompt() {
+                var text1 = "This site has a flag button providing the user the ability to view Berlin from both modern day and Nazi era perspectives.";
+                document.getElementById("prompt").innerHTML = text1;
+                document.getElementById("prompt").style.top = "-82px";
+                document.getElementById("button2").style.display = "block";
+            }
+
+        </script>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

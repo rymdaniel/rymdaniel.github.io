@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #18191d;
+    color: white;
+}
+
+@font-face {
+            font-family:"Coder's Crux";
+            src: url("../fonts/Coder's Crux Regular.eot");
+	        src: url("../fonts/Coder's Crux Regular.eot?#iefix") format('embedded-opentype'),
+		    url("../fonts/Coder's Crux Regular.woff2") format('woff2'),
+		    url("../fonts/Coder's Crux Regular.woff") format('woff'),
+		    url("../fonts/Coder's Crux Regular.svg#Coder's Crux Regular") format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-00FE;
+        }

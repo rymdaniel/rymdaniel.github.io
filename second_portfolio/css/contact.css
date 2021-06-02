@@ -1,0 +1,49 @@
+.inputField, .button {
+    font-family: IBM Plex Mono;
+}
+
+p {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.inputField {
+    position: relative;
+    border: 1px solid black;
+    width: 50%;
+    padding: 5px;
+    margin: 10px auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+.button {
+    padding: 5px;
+    border: 1px solid black;
+    background: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1200px) {    
+
+    
+}
+
+@media screen and (max-width: 506px) {    
+
+}

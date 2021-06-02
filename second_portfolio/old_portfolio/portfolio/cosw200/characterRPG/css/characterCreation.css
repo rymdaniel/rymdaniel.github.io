@@ -1,0 +1,461 @@
+body {
+    font-family: "Coder's Crux";
+    font-size: 1.5em;
+    animation: 1s load alternate ease-in-out;
+}
+
+@keyframes load {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Sets height for the header portion that contains the AVATAR and CHARACTER CREATION titles*/
+header {
+    position: relative;
+    height: 130px;
+}
+
+/*Sets size for pretty much everything aside from the buttons in the footer*/
+main {
+    position: relative;
+    height: 700px;
+}
+
+/*Sets sizefor portion containing navigation buttons*/
+footer {
+    top: 15px;
+    position: relative;
+    height: 120px;
+}
+
+/*declares classes on portions of header, main, and footer to organize content*/
+.farleft {
+    float: left;
+    height: 100%;
+    width: 9%;
+}
+
+.left {
+    float: left;
+    height: 100%;
+    width: 12%;
+    text-align: right;
+    max-height: 700px;
+    max-width: 250px;
+}
+
+.middle {
+    height: 100%;
+    width: 36%;
+    float: left;
+}
+
+.right {
+    position: relative;
+    height: 100%;
+    width: 43%;
+    float: right;
+}
+
+
+header .left p { /*Style for AVATAR title on top left*/
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+header .middle p { /*Style for CHARACTER CREATION title on top middle*/
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 10px 30px;
+}
+
+
+#avatarBox, #keepsakeBox {   /*Establishes preview boxes in the left segment*/
+    width: 99%;
+    border: 1px solid white;
+    position: relative;
+}
+
+#avatarBox:after, #keepsakeBox:after {     /*Assures the box is tall as it is wide*/
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.previewButtons {     /*Container for cycle buttons*/
+    margin: 20px 0 50px;
+    height: 40px;
+    text-align: center;
+    display: block;
+}
+
+.cycleButton:hover {;
+    cursor: url("../media/customCursor.png"), auto;
+    box-shadow: -3px 3px white;
+}
+
+.cycleButton {   /*Style for cyclue buttons*/
+    border: 1px solid white;
+    background: none;
+    padding: 5px 15px;
+    color: white;
+}
+
+#avatarBox p {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 40%;
+    font-size: 6vw;
+    color: #363740;
+    pointer-events: none;
+}
+
+#keepsakeTitle {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#keepsakeBox img {
+    position: absolute;
+    width: calc(100% - 30%);
+    top: 50%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    image-rendering: pixelated;
+    /* float: left; */
+    padding-top: 1.5%;
+}
+
+.keepsakeName {
+    text-align: center;
+    position: relative;
+    margin-top: 85%;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 1.25em;
+    color: #61b0a4;
+    z-index: 10;
+}
+
+.keepsakeName:hover {
+    cursor: url("../media/customHelp.png"), auto;
+}
+
+#characterInfo {    /*Container for all character creation box*/
+    position: relative;
+    border: 1px solid white;
+    height: 95.64%;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+#disorderBox, #personalityBox {   /*Containers for disorder and personality information*/
+    position: relative;
+    width: 76%;
+    height: 44%;
+    border: 1px solid white;
+    margin-bottom: 31px;
+    padding: 15px;
+    z-index: -1 !important;
+}
+
+/* These six .nameLine class styles adjust the name input boxes*/
+.nameLine p, .nameLine input {
+    float: left;
+}                               
+                                    
+.nameLine input:focus {
+    outline: none;
+}
+
+#nameInputs .nameLine p {
+    position: relative;
+    top: 6px;
+    pointer-events: none;
+}
+
+.nameLine {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#nameInputs .nameLine input {
+    float: right;
+    cursor: url(../media/customCaret.png), auto;
+}
+
+#nameInputs #firstName, #nameInputs #lastName {
+    background: none;
+    border: 1px solid white;
+    margin-right: 5%;
+    width: 70%;
+    padding: 5px;
+    font-size: 1em;
+    color: white;
+    font-family: "Coder's Crux";
+}
+
+#nameInputs {
+    width: 94%;
+    height: 19%;
+    position: absolute;
+}
+
+#raceAndClass {
+    position: relative;
+    width: 100%;
+    top: 21%;
+    height: 25%;
+}
+
+.selectionLine {
+    width: 100%;
+    position: relative;
+    height: 45%;
+}
+
+#raceAndClass p{
+    float: left;
+}
+
+#raceAndClass img {
+    position: relative;
+    display: inline;
+    border: 1px solid white;
+    padding: 6px;
+    width: 6%;
+    image-rendering: pixelated;    
+}
+
+#raceAndClass img:hover {
+    cursor: url("../media/customCursor.png"), auto;
+    box-shadow: -3px 3px white;
+}
+
+#disorderIcons {
+    position: relative;
+    left: 56px;
+}
+
+#personalityIcons {
+    position: relative;
+    left: 28px;
+}
+
+#attributes {  /*Stylizes ATTRIBUTES container*/
+    position: relative;
+    top: 24%;
+    height: 50%;
+    z-index: 0 !important;
+}
+
+#attributes p {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+td:nth-child(even) {
+    pointer-events: none;
+    color: #61b0a4;
+    float: right;
+    padding-right: 5px;
+}
+
+td:nth-child(odd):hover {
+    cursor: url(../media/customHelp.png), auto;
+}
+
+#leftTable, #rightTable {
+    position: relative;
+    float: left;
+    width: 49%;
+    line-height: 43px;
+}
+
+#rightTable {
+    margin-left: 5px;
+    padding-left: 10px;
+    border-left: 1px solid white;
+}
+
+/*Displays and stylizes tooltip box that appears on hover*/
+.tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background: #18191d;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: absolute !important;
+    left: 60%;
+    z-index: 10 !important;
+    font-size: 0.85em;
+    border: 1px solid white;
+    float: left;
+}
+
+/*Triggers tooltiptext on hover*/
+.tooltip:hover .tooltiptext  {
+    visibility: visible !important;
+}
+
+.keepsakeTipText {
+    visibility: hidden;
+    width: 500px;
+    background: #18191d;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: absolute !important;
+    top: 100%;
+    left: 120%;
+    font-size: 0.75em;
+    border: 1px solid white;
+    float: left;
+    line-height: 1em;
+    z-index: 100 !important;
+}
+
+.keepsakeName:hover .keepsakeTipText {
+    visibility: visible !important;
+    position: absolute;
+    z-index: 10 !important;
+}
+
+.detailHeader {
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    line-height: 100%;
+}
+
+#disorderInfo, #personalityInfoBox {
+    line-height: 1em;
+    position: relative;
+    text-align: justify;
+    height: 270px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+/*Allows personality info to overflow since lengthier than disorder info.*/
+#personalityBox {
+    position: relative;
+    overflow: auto;
+}
+
+#abilityOne, #abilityTwo {
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    margin: 10px 0;
+}
+
+#personalityInfoOne, #personalityInfoTwo {
+    position: relative;
+    line-height: 1em;
+}
+
+#buttonContainer {
+    position: relative;
+    top: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.pageButton:hover {
+    box-shadow: -3px 3px white;
+    cursor: url(../media/customCursor.png), auto;
+}
+
+.pageButton {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid white;
+    font-family: "Coder's Crux";
+    font-size: 1em;
+    background: none;
+    color: white;
+}
+
+#generate {
+    color: #61b0a4;
+}
+
+.pageButton:focus, .cycleButton:focus {
+    outline: none;
+}
+
+#back {
+    position: relative;
+    top: 20px;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#alertPopup {
+    display: none;
+    background: #18191d;
+    width: 30%;
+    height: 250px;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+}
+
+#iconContainer {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+#alertPopup img {
+    position: relative;
+    width: 80%;
+    image-rendering: pixelated;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textContainer {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+#alertText {
+    font-size: 1.6em;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#alertOk {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 10%;
+}

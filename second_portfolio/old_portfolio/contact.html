@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="media/icons/ghost.png" type="image/png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Palacios: Contact</title>
+    <link href="styles/contact.css" rel="stylesheet">
+    <link href="styles/flicker.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Cutive+Mono|Creepster|Permanent+Marker|Londrina+Sketch|Dhurjati|Sarina|VT323" rel="stylesheet">
+    <style>
+    	.formspree {
+    		font-family: Cutive Mono;
+    		font-size: 1.1em;
+    		text-decoration: underline;
+    		text-transform: capitalize;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="crt"></div>
+    <div class="pixelgrid"></div>
+    <nav id="topbar">
+            <div class="navbar">
+                <div class="logo-container">
+                <a href="home.html"><img src="media/icons/ghost.png" class="logo"></a>
+                </div>
+                <a href="home.html">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn">Portfolio 
+                  <i class="down-arrow">&dtrif;</i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="portfolio/cosw10/cosw10.html">COSW 10</a>
+                  <a href="portfolio/personalwebdev/webdev_stuff.html">PERSONAL WEBDEV</a>
+                  <a href="portfolio/fine_arts/finearts.html">FINE ARTS</a>
+                  <a href="portfolio/writing/writing.html">WRITING</a>
+                  <a href="portfolio/design/design.html">DESIGN</a>
+                  <a href="portfolio/illustration/illustration.html">ILLUSTRATION</a>
+                  <a href="portfolio/video/video.html">VIDEO</a>
+                  <a href="portfolio/music/music.html">MUSIC</a>
+                </div>
+              </div>
+              <a href="about.html">About</a>
+              <a href="#" class="current">Contact</a>
+            </div>
+        </nav>    
+    <div class="main">
+        <header>
+            <h1>CONTACT</h1>
+        </header>
+        <main>
+            <br>
+            <div class="divider"></div>
+            <p><br>This form uses<a href="https:///formspree.io" target="_blank" class="formspree">Formspree</a>, a third-party form submission service, in order to deliver your comments and/or questions.<br><br></p>
+            <form id="contact" action="https://formspree.io/rymdaniel@gmail.com" method="POST">
+                <input type="text" id="fname" name="fname" placeholder="First Name *" required>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                <input type="email" id="email" name="email" placeholder="Email *" required>
+                <textarea id="comment" name="comment" placeholder="Let me know what you need!" style="height:200px"></textarea>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset" id="reset">
+            </form>
+            <br>
+            <p>* Required</p>
+            <br>
+            <p>Due to the use of<a href="https://formspree.io" target="_blank" class="formspree">Formspree</a>for this form please consult their privacy policy for any questions regarding this matter.</p>
+            <br>
+            <div class="divider"></div>
+        </main>
+        <nav>
+            <ul>
+                <li id="back"><a href="home.html">&laquo; BACK</a></li>
+                <li id="top"><a href="#">&Hat; TOP</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--<div class="social">
+        <a href="#"><span>Facebook</span></a>
+        <a href="#"><span>Twitter</span></a>
+        <a href="#"><span>Google+</span></a>
+        <a href="#"><span>Github</span></a>
+        <a href="#"><span>CodePen</span></a>
+    </div>-->
+</body>
+</html>

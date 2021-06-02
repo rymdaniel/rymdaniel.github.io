@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 900px;
+}
+
+body{
+    background: url(lustgartenBerlin2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#title {
+    color: white;
+    position: fixed;
+    width: 150px;
+    text-align: center;
+    top: 20px;
+    font-size: 2em;
+    font-family: Pirata One;
+    text-shadow: 1px 1px 1px black;
+    pointer-events: none;
+}
+
+ul {
+    position: fixed;
+    display: block;
+    list-style-type: none;
+    background: #2b2b2b;
+    top: 75px;
+    text-align: center;
+    width: 150px;
+}
+
+#flagcontainer{
+    position: fixed;
+    width: 150px;
+    top: 335px;
+}
+
+#combiflag {
+    position: relative;
+    width: 60px;
+    left: 45px;
+}
+
+#flagcontainer p {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+li a:hover {
+    background: #404040;
+}
+
+#active {
+    background: #404040;
+}
+
+li a {
+    padding: 20px 0;
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    font-family: Alegreya Sans SC;
+}
+
+li:visited,
+li:active {
+    color: white;
+}
+
+#container {   
+    position: relative;
+    width: 600px;
+    margin: 0 auto 50px;
+    top: 75px;    
+    line-height: 1.4em;
+}
+
+#container p {       
+    color: white;
+    text-align: justify;
+    font-family: Cutive Mono;
+    font-size: 1.2em;
+    background: #101010;
+    box-shadow: 2px 2px 5px black;
+    padding: 30px 30px;
+}
+
+.floatcontainer {
+    width: 300px;
+    border: 2px solid #2b2b2b;
+    padding: 10px;
+}
+
+.floatright {
+    width: 300px;
+    float: right;
+    margin: 0px 0px 10px 30px;
+}
+
+.floatleft {
+    width: 300px;
+    float: left;
+    margin: 0px 20px 30px;
+}
+
+.floatcenter {
+    width: 300px;
+    position: relative;    
+    margin: 0px 0px 30px 0px;
+    left: 140px;
+}
+
+.centerpic {
+    display: block;
+    margin: 0 auto;
+}
+
+#container .floatcontainer p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 1160px;
+}
+
+body{
+    background: url(berlinlandscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#title {
+    color: white;
+    position: fixed;
+    width: 150px;
+    text-align: center;
+    top: 20px;
+    font-size: 2em;
+    font-family: Alegreya Sans SC;
+    text-shadow: 1px 1px 1px black;
+    pointer-events: none;
+}
+
+ul {
+    position: fixed;
+    display: block;
+    list-style-type: none;
+    background: #2b2b2b;
+    top: 75px;
+    text-align: center;
+    width: 150px;
+}
+
+#flagcontainer{
+    position: fixed;
+    width: 150px;
+    top: 335px;
+}
+
+#combiflag {
+    position: relative;
+    width: 60px;
+    left: 45px;
+}
+
+#flagcontainer p {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+li a:hover {
+    background: #404040;
+}
+
+#active {
+    background: #404040;
+}
+
+li a {
+    padding: 20px 0;
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    font-family: Alegreya Sans SC;
+}
+
+li:visited,
+li:active {
+    color: white;
+}
+
+#container {   
+    position: relative;
+    width: 800px;
+    margin: 0 auto 50px;
+    top: 75px;    
+    line-height: 1.4em;
+    background: #101010;
+    box-shadow: 2px 2px 5px black;
+    padding: 30px 30px;
+}
+
+#container h1 {
+    color: white;
+    line-height: 1.4em;
+    font-family: Cutive Mono;
+    font-size: 1em;
+    text-align: center;
+}
+
+#container img {
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.column {
+    column-count: 2;
+}
+
+.imagecontainer {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto 30px;
+}
+
+.linkcontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(16, 16, 16, 0.5);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+    transition: opacity .25s, visibility .25s;
+}
+
+.imagecontainer:hover .linkcontainer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imagelinks a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    top: 90px;
+    width: 300px;
+    font-family: Cutive Mono;
+    font-size: 1.5em;
+}
+
+.imagelinks a:hover {
+    text-decoration: underline;
+}
+
+.imagelinks {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.imagecontainer:hover .imagelinks {
+    transform: translateY(0);
+}
+
+#alert {
+    margin: 0px 0px 20px;
+    opacity: 0.50;
+    color: white;
+    font-family: Cutive Mono;
+    text-align: center;
+    font-style: italic;
+}
+
+#infotables {
+    width: 475px;
+    background: #505050;
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    z-index: 10;
+    text-align: center;
+    border: 6px solid #101010;
+    left: 10px;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    font-family: Cutive Mono;
+}
+
+table, td, th, tr {
+    position: relative;
+    padding: 3px 3px;
+    border-collapse: collapse;
+    border: 2px solid #101010;
+    width: 100%;
+}
+
+#spacer {
+    background: #101010;
+    border: 0px;
+}
+
+tr:nth-child(1),
+tr:nth-child(4),
+tr:nth-child(7),
+tr:nth-child(10) {
+    background-color: #2b2b2b;
+}
+
+@media only screen and (max-width: 1177px) {
+    .infotables,
+    .tablebutton
+    {display:none;}
+}
+
+button {
+    position: fixed;
+    bottom: 375px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: red;
+    border: 0;
+}
+
+button p {
+    top: -1.5px;
+    left: 0.5px;
+    position: relative;
+    color: white;
+    font-size: 1.3em;
+}

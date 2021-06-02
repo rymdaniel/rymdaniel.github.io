@@ -1,0 +1,18 @@
+/*CSS added to every iframe specific HTML to manipulate the appearance of the iframe's scrollbar. Works for the entire webpage itself so long as the browser supports -webkit-*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #363740;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #61b0a4;
+}
+
+body::-webkit-scrollbar-thumb:hover { /*Something seen throughout my code when hovering over specific elements. Sets a custom cursor.*/
+    background: white;
+    cursor: url("../media/customCursor.png"), auto;
+}

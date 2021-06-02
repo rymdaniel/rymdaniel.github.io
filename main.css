@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Alfa+Slab+One");
+@font-face {
+  font-family: "Nulshock";
+  src: url(nulshock.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("media/textured_paper.png");
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre Baskerville";
+}
+
+#logo {
+  width: 7em;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40%;
+  position: fixed;
+  padding: 25px;
+}
+
+.left div {
+  display: none;
+}
+
+.left .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.left img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.right {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 40%;
+  top: 100px;
+  width: 60%;
+  padding: 25px;
+}
+
+.right .title-wrapper {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  border: 2px solid #3f8dea;
+  border-radius: 3px 3px 0px 0px;
+  padding: 5px;
+  background-color: #3f8dea;
+  mix-blend-mode: multiply;
+  z-index: 80;
+  color: white;
+  text-shadow: none !important;
+}
+
+.right .icon-list {
+  position: relative;
+  top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  border: 4px solid #3f8dea;
+  mix-blend-mode: multiply;
+}
+
+.right .icon-list li {
+  list-style-type: none;
+  height: 50px;
+  margin: 10px 15px;
+}
+
+.right .icon-list li img {
+  height: 100%;
+}
+
+.right .intro, .right .projects, .right .contact {
+  text-align: center;
+}
+
+.container > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("media/textured_paper.png");
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, img, input, ::-webkit-input-placeholder {
+  color: #3f8dea;
+  mix-blend-mode: multiply;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, img, input, :-ms-input-placeholder {
+  color: #3f8dea;
+  mix-blend-mode: multiply;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, img, input, ::-ms-input-placeholder {
+  color: #3f8dea;
+  mix-blend-mode: multiply;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, img, input, ::placeholder {
+  color: #3f8dea;
+  mix-blend-mode: multiply;
+}
+
+h1, h2 {
+  text-shadow: 0.4px 0.3px 2px #4fbdef, -0.4px -0.3px 2px #4fbdef, -0.6px 0.6px 6px #4fbdef, 0.6px -0.6px 1px #4fbdef;
+}
+
+h3, h4, h5, h6, a, p, li, img, input, td, #copy_btn, ::-webkit-input-placeholder {
+  text-shadow: 0.4px 0.3px 1px #4fbdef, -0.4px -0.3px 1px #4fbdef, -0.6px 0.6px 1px #4fbdef, 0.6px -0.6px 1px #4fbdef;
+}
+
+h3, h4, h5, h6, a, p, li, img, input, td, #copy_btn, :-ms-input-placeholder {
+  text-shadow: 0.4px 0.3px 1px #4fbdef, -0.4px -0.3px 1px #4fbdef, -0.6px 0.6px 1px #4fbdef, 0.6px -0.6px 1px #4fbdef;
+}
+
+h3, h4, h5, h6, a, p, li, img, input, td, #copy_btn, ::-ms-input-placeholder {
+  text-shadow: 0.4px 0.3px 1px #4fbdef, -0.4px -0.3px 1px #4fbdef, -0.6px 0.6px 1px #4fbdef, 0.6px -0.6px 1px #4fbdef;
+}
+
+h3, h4, h5, h6, a, p, li, img, input, td, #copy_btn, ::placeholder {
+  text-shadow: 0.4px 0.3px 1px #4fbdef, -0.4px -0.3px 1px #4fbdef, -0.6px 0.6px 1px #4fbdef, 0.6px -0.6px 1px #4fbdef;
+}
+
+.title {
+  width: 100%;
+  font-size: 8vw;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+}
+
+#name {
+  font-size: 2vw;
+}
+
+input, textarea {
+  font-size: 1em;
+  border: 2px solid #3f8dea;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+input, textarea, #modal, .skill-container, #copy_btn {
+  -webkit-box-shadow: 0.2px 0.2px 1px #4fbdef, -0.2px -0.2px 1px #4fbdef, -0.3px 0.3px 1px #4fbdef, 0.3px -0.3px 1px #4fbdef;
+          box-shadow: 0.2px 0.2px 1px #4fbdef, -0.2px -0.2px 1px #4fbdef, -0.3px 0.3px 1px #4fbdef, 0.3px -0.3px 1px #4fbdef;
+}
+
+::-webkit-input-placeholder {
+  color: #3f8dea;
+}
+
+:-ms-input-placeholder {
+  color: #3f8dea;
+}
+
+::-ms-input-placeholder {
+  color: #3f8dea;
+}
+
+::placeholder {
+  color: #3f8dea;
+}
+
+.section {
+  margin-top: 130px;
+}
+
+/* START PREVIEW GALLERY */
+#previewContainer {
+  margin: 0 auto;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.preview {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height: 220px;
+}
+
+.preview h1 {
+  width: 200px;
+}
+
+#previewContainer img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+#previewContainer img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* END IMAGE GALLERY */
+/* START MODAL */
+#modalContent {
+  display: none;
+}
+
+#modal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  min-width: 90%;
+  height: 80% !important;
+  width: 60%;
+  height: 55%;
+  position: fixed;
+  top: 80px;
+  background: white;
+  border: 3px solid #3f8dea;
+  border-radius: 5px;
+  overflow: auto;
+  background-image: url("media/textured_paper.png");
+  z-index: 999;
+}
+
+#modalClose {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  float: right;
+  left: 10px;
+  top: 10px;
+  margin: 10px;
+  background: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+  z-index: 1000;
+  font-size: 1.4em;
+}
+
+#modalClose:hover {
+  cursor: pointer;
+}
+
+#modalLeft {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+
+#modalLeft img {
+  position: relative;
+  width: 80%;
+  top: 20px;
+  padding: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#thumbnailContainer {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+#modalRight {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+
+#thumbnailContainer a {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  color: #3f8dea;
+}
+
+#description {
+  padding: 10px;
+}
+
+#modalContent {
+  padding-right: 10px;
+  display: block;
+  position: relative;
+  top: 38px;
+  color: #3f8dea;
+}
+
+#modalContent h1 {
+  text-align: center;
+}
+
+#modalContent table {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-spacing: 5px;
+}
+
+#modalContent table td {
+  width: 50%;
+  border: 2px solid #3f8dea;
+}
+
+#hiddenModalContent {
+  display: none;
+}
+
+.workLink {
+  display: block;
+  margin: 0 auto;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  color: black;
+}
+
+#copy_btn {
+  border: 3px solid #3f8dea;
+  border-radius: 15px;
+  background-color: transparent;
+  font-family: "Libre Baskerville";
+  color: #3f8dea;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#copy_btn:hover {
+  background-color: #3f8dea;
+  color: white;
+}
+
+#social-icons {
+  margin: 1em 0;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#social-icons img {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #thumbnailContainer {
+    width: 100% !important;
+  }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-container .container {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .flex-container .left {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .flex-container .right {
+    left: 0;
+    top: 0;
+  }
+  .flex-container .right .intro {
+    margin-top: 2em;
+  }
+  .flex-container .right .intro #name {
+    font-size: 1.2em;
+  }
+  .flex-container .right .intro #name, .flex-container .right .intro .title {
+    text-align: center;
+  }
+  .flex-container .active {
+    height: 100%;
+  }
+  #previewContainer {
+    margin: 0 auto;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  #copy_btn {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

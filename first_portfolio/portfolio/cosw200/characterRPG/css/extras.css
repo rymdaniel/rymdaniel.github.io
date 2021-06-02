@@ -1,0 +1,108 @@
+body {
+    animation: 1s fade forwards ease-in-out;
+    /*background: url("../media/finalLinkPage.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    font-family: "Coder's Crux";
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#leftContainer {
+    position: relative;
+    height: 100vh;
+    width: 30%;
+    float: left;
+    font-size: 2.5em;
+}
+
+nav {
+    position: relative;
+    height: 100vh;
+    width: 8%;
+    float: left;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 62%;
+    float: right;
+}
+
+#logoAndTitle {
+    width: 95%;
+    position: relative;
+    top: 10%;
+    text-align: right;
+}
+
+#leftContainer img {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#infoLinks {
+    position: relative;
+    top: 9.5%;
+    font-size: 1.5em;
+    border-left: 1px solid white;
+    padding-left: 15px;
+}
+
+#infoLinks p {
+    padding-bottom: 10px;
+}
+
+#attributes {
+    padding-bottom: 0px !important;
+}
+
+#infoLinks p:hover {
+    color: #61b0a4;
+    cursor: url("../media/customCursor.png"), auto;
+}
+
+iframe {
+    overflow: auto;
+    border: none;
+    position: relative;
+    top: 9.5%;
+    width: 80%;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%,0%);
+    animation: 1s fade forwards ease-in-out;
+}
+
+#mainMenu {
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    margin: 30px;
+}
+
+.pageButton {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid white;
+    font-family: "Coder's Crux";
+    font-size: 1.25em;
+    background: none;
+    color: white;
+    margin: 5px;
+}
+
+.pageButton:focus, .cycleButton:focus {
+    outline: none;
+}
+
+.pageButton:hover {
+    box-shadow: -3px 3px white;
+    cursor: url(../media/customCursor.png), auto;
+}

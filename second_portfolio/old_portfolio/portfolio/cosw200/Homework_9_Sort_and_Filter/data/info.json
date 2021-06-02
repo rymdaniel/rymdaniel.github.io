@@ -1,0 +1,47 @@
+{
+    "neighborhood": {
+            "title": "Neighborhood",
+            "src": "img/p1.jpg",
+            "description": "&emsp;Siphon Labs, a memory recording and removal company, is expanding it's technological capabilities: memory implants. Despite quite vocal public outcry the majority of the world is in favor of the idea. But a young Siphoner has a feeling someone is aiming to take steal Siphon Lab secrets. The Siphoner becomes hell-bent on stopping any information being stolen...that is if they don't take it for themselves."
+        },
+    "ifNotForYou": {
+            "title": "If Not For You",
+            "src": "img/p2.jpg",
+            "description": "&emsp;Sam feels the warm spring winds flow through the trees and onto his face. He loves to spend these days talking and throwing rocks by the river with his friend, Emily. They enjoy getting home past curfew and telling each other all their secrets. Despite how wonderful life is for him, Sam can't help but it all be coming to a close. He knows Emily won't be there forever."
+        },
+    "immoralBlood": {
+            "title": "Immoral Blood",
+            "src": "img/p3.jpg",
+            "description": "&emsp;Twin siblings, Joy and Noah, are sent on a lifelong killing spree when their parents are murdered by a gang of savage banditos. Their purpose is to find those responsible for their parent's deaths, but with their growing reputation for the amount of blood they've let flow enemies start popping up from all corners of the world."
+        },
+    "hikari": {
+            "title": "Hikari",
+            "src": "img/p4.jpg",
+            "description": "&emsp;The year is 2066 and the line between humanity and technology is practically non-existant. Everyone has technological implants and augmentations of all sorts. But what happens when all if those technologies fail? Hikari can't help but feel she exists for something big but she can't remember where she is from nor how she got there. Will she find her place in the world if she can find out who she is?"
+        },
+    "otkaz": {
+            "title": "Otkaz (Denial)",
+            "src": "img/p5.jpg",
+            "description": "&emsp;When a development lab creates the first immortal being on earth they can't help but feel sheer bliss and a longing to perfect the procedure for everyone on earth. Everyone is happy except Alex; the first immortal being. With the passing years and seeing all her loved ones pass on Alex can't help but feel the need to die."
+        },
+    "yeoja": {
+            "title": "Yeoja",
+            "src": "img/p6.jpg",
+            "description": "&emsp;When Ji-young witnesses the murder of her next-door neighbor she does what any normal person would do and calls the cops. But when she starts seeing her neighbor appear in different places she succumbs to paranoia and hallucinations. Coming to terms with her psychological shift she begins to communicate with her neihbor's apparition who tells her the police have the story all wrong and it's up to Ji-young to find out the truth."
+        },
+    "losDesesperados": {
+            "title": "Los Desesperados",
+            "src": "img\/p7.jpg",
+            "description": "&emsp;The lives of a group of friends are thrown into chaos when a renown gang attacks and takes control of their town. Their parents manage to help them escape so they go from town to town to seek help. When help doesn't come they realize it will be up to them to take back their town using the gangs own vicious tactics against them."
+        },
+    "theLoveOfSin": {
+            "title": "The Love of Sin",
+            "src": "img/p8.jpg",
+            "description": "&emsp;Sabrina and Abigail are two sisters who live a peaceful life on their parent's estate but when their parents die in a freak accident they can't help but feel there is more to the story. Matters are only made worse when rumors begin saying they are responsible for their own parent's deaths. Will the sisters turn on each other in suspicion?"
+        },
+    "voidKing": {
+            "title": "Void King",
+            "src": "img/p9.jpg",
+            "description": "&emsp;When there is nothing, what is there to do? Everything of course. When nothing exists everything is possible and can happen, and that is the Void King's job. An immaterial being followed by his unhallowed skeletal entourage, the Void King can create worlds more marvelous than the mind can imagine. What he creates he can also destroy. But can he be destroyed?"
+        }
+}

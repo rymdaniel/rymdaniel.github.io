@@ -1,0 +1,45 @@
+@keyframes scroll {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 15px;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.03;
+    }
+    100% {
+        opacity: 0.06;
+    }
+}
+
+@keyframes flicker2 {
+    0% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.crt {
+    background: url(../media/crt.gif);
+    position: fixed;
+    z-index: -998;
+    width: 100vw;
+    height: 100vh;
+    animation: flicker 0.1s infinite;
+}
+
+.pixelgrid{
+    background: url(../media/smallgridfinalpng.png);
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.15;
+    pointer-events: none;
+}

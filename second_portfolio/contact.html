@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Daniel Palacios: Developer</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/contact.css">
+    <meta name="description" content="Web Development Portfolio">
+    <meta name="keywords" content="HTML, CSS, web, development, portfolio, design, website, site, creation">
+    <meta name="author" content="Daniel Palacios">
+    <link rel="icon" href="media/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|IBM+Plex+Mono|Amiko" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img id="logo" src="media/logo.png"></a>
+        <div id="navlinks">
+            <a href="about.html">About</a>
+            <a href="webDev.html">WebDev</a>
+            <!--<a href="compSci.html">CompSci</a>-->
+            <a href="#" class="current">Contact</a>
+        </div>
+        <div id="mobilelinks">
+            <a href="about.html">About</a>
+            <a href="webDev.html">WebDev</a>
+            <!--<a href="compSci.html">CompSci</a>-->
+            <a href="#" class="current">Contact</a>
+        </div>
+        <div id="menuIcon">
+            <div id="bars">
+                <div class="bar" id="barOne"></div>    
+                <div class="bar" id="barTwo"></div>    
+                <div class="bar" id="barThree"></div>
+            </div>
+            <div id="close">&times;</div>
+        </div>
+    </nav>
+    <div id="whiteBar"></div>
+    <main>
+        <p><br>This form uses <a href="https:///formspree.io" target="_blank" class="formspree">Formspree</a>, a third-party form submission service, in order to deliver your comments and/or questions.<br><br></p>
+        <form id="contact" action="https://formspree.io/rymdaniel@gmail.com" method="POST">
+                <input type="text" id="fname" name="fname" placeholder="First Name *" required class="inputField">
+                <input type="text" id="lname" name="lname" placeholder="Last Name" class="inputField">
+                <input type="email" id="email" name="email" placeholder="Email *" required class="inputField">
+                <textarea id="comment" name="comment" placeholder="Let me know what you need!" style="height:200px" class="inputField"></textarea>
+            <div id="buttonContainer">
+                <input type="submit" value="Submit" id="submit" class="button">
+                <input type="reset" value="Reset" id="reset" class="button">
+            </div>    
+            </form>
+            <p><br>* Required</p>
+            <p><br>Due to the use of <a href="https://formspree.io" target="_blank" class="formspree">Formspree</a> for this form please consult their privacy policy for any questions regarding this matter.</p>
+    </main>
+    <footer>
+            <a href="https://codepen.io/rymdaniel/" title="Codepen" target="_blank"><img src="media/codepen.png"></a>
+            
+            <a href="https://github.com/rymdaniel" title="Github" target="_blank"><img src="media/github.png"></a>    
+                
+            <a href="https://www.linkedin.com/in/daniel-palacios-9704b5a6/" title="LinkedIn" target="_blank"><img src="media/linkedin.png"></a>    
+            <a href="https://www.sololearn.com/Profile/3405025" title="Sololearn" target="_blank"><img src="media/sololearn.png"></a>
+            
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

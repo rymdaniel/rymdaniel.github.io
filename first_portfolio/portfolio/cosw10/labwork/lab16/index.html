@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<link href="../../../../media/icons/ghost.png" type="image/png" rel="icon">
+        <title>Lab 16: CSS Transitions</title>
+        <style>
+            h1 {
+                font-size: 1.2em;
+                font-family: Courier;
+                transition: font-size 0.4s ease-in,
+                    color 0.3s ease-in;
+            }
+            
+            h1:hover {
+                cursor: pointer;
+                color: red;
+                font-size: 1.4em;
+                
+            }
+            
+            img:hover {
+                cursor: pointer;
+            }
+            
+            .img1:hover {
+                filter: invert(0.2);
+            }
+            
+            .img2:hover {
+                filter: grayscale(100%);
+            }
+            
+            .img3:hover {
+                filter: sepia(100%);
+            }
+            
+            .img4:hover {
+                filter: blur(1px);
+            }
+            
+            .img5:hover {
+                filter: hue-rotate(90deg);
+            }
+            
+            .img6:hover {
+                filter: contrast(400%);
+            }
+            
+            img {
+                display: inline-block;
+                width: 150px;
+                height: auto;
+            }
+            
+            .container {
+                display: inline-block;
+                position: relative;
+            }
+            
+            .overlay1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: rgba(20,20,20,0.5);
+            }
+            
+            .container:hover .overlay1 {
+                opacity: 1;
+                cursor: pointer;
+            }
+            
+            .text1 {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+            
+            .overlay2 {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(20,20,20,0.5);
+                overflow: hidden;
+                width: 100%;
+                height:0;
+                transition: .5s ease;
+            }
+            
+            .container:hover .overlay2 {
+                bottom: 0;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .text2 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+
+            .overlay3 {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                right: 0;
+                background-color: rgba(20,20,20,0.5);
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: .5s ease;
+            }
+            
+            .container:hover .overlay3 {
+                width: 100%;
+                left: 0;
+                cursor: pointer;
+            }
+            
+            .text3 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+            
+            #accordion div{
+                overflow: hidden;
+                height: 0;
+                transition: height 0.3s ease-in-out;
+            }
+            
+            #accordion {
+                font-family: Courier;
+            }
+            
+            #accordion h3 a{
+                text-decoration-line: none;
+            }
+            
+            #accordion div:target {
+                height: 20px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <h1>A Collection of Retro / Minimalist Movie Posters</h1>
+        <p>
+            <img class="img1" src="a_clockwork_orange.jpg" alt="">
+            <img class="img2" src="her.jpg" alt="">
+            <img class="img3" src="drive.jpg" alt="">
+        </p>
+        <div class="container">
+            <img class="img4" src="the_indiana_jones_trilogy.jpg" alt="">
+            <div class="overlay1">
+                <div class="text1">yo</div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <img class="img5" src="a_space_odyssey.jpg" alt="">
+            <div class="overlay2">
+                <div class="text2">ayy</div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <img class="img6" src="suspiria.jpg" alt="">
+            <div class="overlay3">
+                <div class="text3">wow</div>
+            </div>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        <div id="accordion">
+            <h3><a href="#Q1">Which movie made the most money?</a></h3>
+            <div id="Q1">Some Answer Here</div>
+            <h3><a href="#Q2">Which movie hasn't come out yet?</a></h3>
+            <div id="Q2">Some Answer Here</div>
+            <h3><a href="#Q3">Which movie was the best reviewed?</a></h3>
+            <div id="Q3">Some Answer Here</div>
+        </div>
+    </body>
+</html>

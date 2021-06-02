@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #191919;
+    position: relative;
+    overflow: hidden;
+    animation: fade 1.2s ease-in-out forwards;
+}
+
+main {
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 30vh 0 25vh;
+    color: white;
+}
+
+main a {
+    text-decoration: none;
+} 
+
+.starcontainer {
+    top: -200px;
+    position: absolute;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    animation: fade 1.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+}
+
+main img {
+    position: relative;
+    display: block;
+    width: 100%;
+    filter: invert();
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-family: Spectral SC;
+    color: white;
+}
+
+nav {
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav a{
+    padding: 5px;
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: Cutive Mono;
+    text-transform: uppercase;
+    margin: -9px;
+}
+
+nav a:hover {
+    background: seagreen;
+    color: white;
+}
+
+aside {
+    float: right;
+    width: 46%;
+    position: relative;
+    height: 90vh;
+    padding: 3% 2%;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+    height: 100%;
+    padding: 1.2% 0;
+}
+
+#playlist-text iframe {
+    width: 100%;
+}
+
+aside iframe {
+    height: 45vh;
+}
+.youtube {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: none;
+}
+
+#playlist-text iframe {
+    border: none;
+    margin-top: 20px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#current:before {
+    content: "> ";
+    color: seagreen;
+    font-weight: bold;
+}
+
+#current:after {
+    content: " <";
+    color: seagreen;
+    font-weight: bold;
+}
+
+#current:hover:after {
+    content: " <";
+    color: white;
+    font-weight: bold;
+}
+
+#current:hover:before {
+    content: "> ";
+    color: white;
+    font-weight: bold;
+}
+
+.sunrise {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: -80px;
+    background: linear-gradient(yellow, orange);
+    left: 47%;
+    border-radius: 50%;
+    animation: rise 1.5s ease-out .5s forwards, shine 8s ease infinite;
+    opacity: 0;
+    box-shadow: 0px 0px 10px yellow;
+}
+
+.sunset {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: -150px;
+    background: linear-gradient(yellow, #d24400);
+    left: 47%;
+    border-radius: 50%;
+    animation: set 1.5s ease-out .5s forwards, wane 8s ease infinite;
+    opacity: 0;
+    box-shadow: 0px 0px 10px yellow;
+}
+
+@keyframes rise {
+    0% {opacity: 0;
+    }
+    100% {opacity: 1;
+          transform: translateY(-75px);
+    }
+}
+
+@keyframes shine {
+    0% {box-shadow: 0px 0px 10px orange}
+    50% {box-shadow: 0px 0px 20px yellow}
+    100% {box-shadow: 0px 0px 10px orange}
+}
+
+@keyframes set {
+    0% {opacity: 0;
+    }
+    100% {opacity: 1;
+          transform: translateY(55px);
+    }
+}
+
+@keyframes wane {
+    0% {box-shadow: 0px 0px 10px #FF3E00}
+    50% {box-shadow: 0px 0px 20px orange}
+    100% {box-shadow: 0px 0px 10px #FF3E00}
+}
+
+@media screen and (max-width: 770px) {
+    .starcontainer {
+        display: none;
+    }
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.spotify {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 620px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+      .sunrise, .starcontainer, .sunset {
+          display: none;
+      }
+      
+      main {
+          float: none;
+          position: relative;
+          margin: 0 auto;
+          width: 100%;
+      }
+      
+      main nav {
+          width: 100%;
+          display: flex;
+          margin: 0;
+          padding: 0;
+      }
+      
+      #current:before {
+          content: none;
+      }
+      
+      #current:after {
+          content: none;
+      }
+      
+      #current:hover:after {
+      content: none;
+      color: white;
+      font-weight: bold;
+      }
+
+      #current:hover:before {
+      content: none;
+      color: white;
+      font-weight: bold;
+      }
+      
+      main nav a {
+          width: 24.63%;
+          font-size: 1.4em;
+          padding: 0;
+          margin: 0;
+          border: 1px solid #454545;
+      }
+      
+      nav br {
+          display: none;
+      }
+            
+      aside {
+          float: none;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0;
+          position: relative;
+      }
+      
+      nav a:nth-last-child(1) {
+        text-align: center;
+        line-height: 60px;
+      }
+}

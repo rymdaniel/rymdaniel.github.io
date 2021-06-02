@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+#player,#player a{ color:#4ecca3;  font-size: 11px; font-family: Montserrat;}
+#player{ background-position:bottom; background-color: #393e46;}
+#player .mainImage{ background:url(kl.png); }
+
+#player #baseLeft{ width:93px; }
+#player #baseRight{ width:145px;}
+#player .button{  width:26px; }
+#player #play{ background:url(kl-crop.png); }  
+#player #play,#player #pause{ left:26px; }  
+#player #previous{ left:0px; }
+#player #next{ left:52px; }
+#player #title{ left:90px;  font-size: 9px; }    
+#player #tooltip{ right:196px; }
+#player #timer{ right:120px;  } 
+#player #list{ right:0px; }
+
+#player #seeker{ right:320px; }
+#player #seekerBase{ border: none;  }    
+#player #seekerBuffered{ background-color:#4ecca3; }
+#player #seekerSliderBase{ background-color:white; }  
+
+#player #volume{ width:65px; right:39px; }
+#player #volumeSlider{ width:8px; background-color:#232931; }
+
+#playlist {border-left: 1px solid #4ecca3; color: #4ecca3;}
+#playlist .module{background-color:#000000; }
+#playlist h3{background-color:#000;  }
+#playlist .even{background-color:#000;}
+#playlist .odd{ background-color:#000;} 
+#playlist .focus{ background-color:#4ecca3; color:white;}
+#bsap_1306386 {display: none;}          

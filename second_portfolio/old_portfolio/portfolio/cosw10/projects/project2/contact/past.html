@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Palacios">
+    <title>Berlin: Then &amp; Now</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="A short history on Berlin and how it's changed since WWII.">
+    <meta name="keywords" content="Berlin, City, WWII, Nazi, Era, Germany, World War, Deutschland, Deutsch, History, Visit, Landmark, Landmarks, Museum, Museums, Vacation">
+    <link rel="stylesheet" href="past.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cutive+Mono|Pirata+One|Crimson+Text" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <p id="title">BERLIN</p>
+        <ul>
+            <li><a href="../home/past.html">Home</a></li>
+            <li><a href="../history/past.html">History</a></li>
+            <li><a href="../landmarks/past.html">Landmarks</a></li>
+            <li id="active"><a href="#">Contact</a></li>
+        </ul>
+        <div id="flagcontainer">
+            <a href="modern.html"><img id="combiflag" src="../combiflag.png" alt="German & Nazi Flag"></a>
+            <p>Click flag to switch between content.</p>
+        </div>
+    </nav>
+    <section>
+        <div id="container">            
+            <div class="form">
+                <form action="submitPast.html">
+                    <p>Schutzstaffel der N.S.D.A.P</p>
+                    <label for="idnum">ID No.</label>
+                    <input type="number" id="idnum" min="0" name="idnum" placeholder="Your ID number...">
+                    
+                    <label for="birth">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="germany">Germany</option>
+                        <option value="japan">Japan</option>
+                        <option value="italy">Italy</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="russia">Russia</option>
+                        <option value="unitedkingdom">UK</option>
+                    </select>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Write here.." style="height:125px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="../../../../media/icons/ghost.png" type="image/png" rel="icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Palacios">
+    <title>Berlin: Then &amp; Now</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="A short history on Berlin and how it's changed since WWII.">
+    <meta name="keywords" content="Berlin, City, WWII, Nazi, Era, Germany, World War, Deutschland, Deutsch, History, Visit, Landmark, Landmarks, Museum, Museums, Vacation">
+    <link rel="stylesheet" href="tour.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cutive+Mono|Pirata+One|Crimson+Text" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <p id="title">BERLIN</p>
+        <ul>
+            <li><a href="../home/modern.html">Home</a></li>
+            <li><a href="../history/modern.html">History</a></li>
+            <li><a href="../landmarks/modern.html">Landmarks</a></li>
+            <li id="active"><a href="#">Contact</a></li>
+        </ul>
+        <div id="flagcontainer">
+            <a href="past.html"><img id="combiflag" src="combiflag.png" alt="German & Nazi Flag"></a>
+            <p>Click flag to switch between content.</p>
+        </div>
+    </nav>
+    <section>
+        <div id="container">
+            <div class="form">
+                <form action="tour_confirm.html" method="post">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Your first name..." required>
+                    
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name..." required>
+                    
+                    <label for="email">e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+                    
+                    <label for="saddress">Street Address</label>
+                    <input type="text" id="saddress" name="saddress" placeholder="Your street address...">
+                    
+                    <label for="city_st_zip">City, State, Zipcode</label>
+                    <input type="text" id="city_st_zip" name="city_st_zip" placeholder="Your city, state, and zipcode...">
+                                
+                    <label for="phone_num">Phone Number</label>
+                    <input type="tel" id="phone_num" name="phone_num" placeholder="Ex: 555-555-5555..." pattern="\d{3}[\-]\d{3}[\-]\d{4}" minlength="12" maxlength="12">
+                    
+                    <label for="age">Age</label>
+                    <select id="age" name="age">
+                        <option value="under_18">Under 18</option>
+                        <option value="18to35">18 - 35</option>
+                        <option value="36to55">36 - 55</option>
+                        <option value="56plus">56 +</option>
+                    </select>
+                    
+                    <label for="date">Date For Reservation</label>
+                    <input type="date" id="date" name="date">
+                    
+                    
+                    <label for="guest_num">Number of Guests</label>
+                    <input type="number" id="guest_num" name="guest_num" min="0" value="0">
+                    
+                    
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Write here.." style="height:200px"></textarea>
+                    
+                    <div class="radio">
+                            <input type="radio" name="sub" value="yes" checked> Yes, subscribe me to the email list.<br>
+                            <input type="radio" name="sub" value="no"> No, don't subscribe me.
+                    </div>                     
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('date').valueAsDate = new Date();
+    </script>
+</body>
+
+</html>
